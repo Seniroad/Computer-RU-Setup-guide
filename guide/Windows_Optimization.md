@@ -281,9 +281,9 @@ for %a in ("SysWOW64" "System32") do (if exist "%windir%\%~a\OneDriveSetup.exe" 
 
 ## Настройте графический драйвер
 
-- Смотрите [docs/configure-nvidia.md](/docs/configure-nvidia.md)
+- Смотрите [/guide/setup_nvidia_driver.md](/guide/setup_nvidia_driver.md)
 
-- Смотрите [docs/configure-amd.md](/docs/configure-amd.md)
+- Смотрите [/guide/setup_amd_driver.md](/guide/setup_amd_driver.md)
 
 ## Настройте MSI Afterburner
 
