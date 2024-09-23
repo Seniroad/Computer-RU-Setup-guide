@@ -14,7 +14,7 @@
 - **[Calypto](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit)**
 - **[Amitxv(valleyofdoom)](https://github.com/valleyofdoom/PC-Tuning)**
 - **[EXO(обитает на LLG)](https://shorturl.at/VXwBJ)**
-- **[Seniro(обитаю на Revolution)](https://discord.gg/fS9AYGYbJA)**
+- **Seniro (Создатель, обитаю обычно на CommunityX)**
 
 ## Бенчмаркинг
 - **[FrameView](https://www.nvidia.com/en-gb/geforce/technologies/frameview)** - Слишком нагруженное приложение. Если хотите - используйте. Я не советую использовать её.
