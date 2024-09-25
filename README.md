@@ -7,7 +7,7 @@
 и использования информации в целях "применить и все будет хорошо".
 **Большая часть гайда это перевод PC-Tuning для ру комьюнити.**
 
-## Гайд основан на исследованиях этих крутых ребят
+## Гайд основан на исследованиях данных энтузиастов
 - **[Timecard](https://github.com/BoringBoredom/PC-Optimization-Hub)**
 - **[Calypto](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit)**
 - **[Amitxv(valleyofdoom)](https://github.com/valleyofdoom/PC-Tuning)**
