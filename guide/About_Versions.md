@@ -40,7 +40,7 @@
 
   - Также был обновленн WDDM до версии 3.2 ([1](https://learn.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#display-and-graphics-drivers))
  
-  - В 24h2 убран поток GPU из RetRawInputData, что должно положительно сказаться на итоговых результатах.
+  - В 24h2 из потока инпута (функции GetRawInputData) была убрана связь с DPC от GPU драйвера, что должно положительно сказаться на итоговых результатах.
     
   - В 24h2 используется два потока инпута в DWM, вместо трех (23h2).
   
