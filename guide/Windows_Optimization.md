@@ -340,7 +340,7 @@ for %a in ("SysWOW64" "System32") do (if exist "%windir%\%~a\OneDriveSetup.exe" 
 > Этот раздел необходим в случае отключения необходимых служб и компонентов рабочего стола. Также позволяет вернуть меню 10 Windows на 11.
 
 
-- Скачайте и установите [Explorer Patcher](https://github.com/valinet/ExplorerPatcher). Проеверьте, что ваш билд подходит под версию программы.
+- Скачайте и установите [Explorer Patcher](https://github.com/valinet/ExplorerPatcher). Проверьте, что ваш билд подходит под версию программы.
 
 ## Spectre, Meltdown и микрокод процессора
 
