@@ -21,7 +21,7 @@
 
 - **[Windows Performance Toolkit](https://learn.microsoft.com/en-us/windows-hardware/test/wpt)** - Расширенный анализ прерываний для Windows. Измерьте время выполнения ISR/DPC с помощью **[xperf](/files/xperf-test-script.bat)**.
 
-- **[Mouse Tester](https://github.com/amitxv/MouseTester)** - Проверьте интервал опроса, частоту работы мыши, узнайте о стабильности чувствительности.
+- **[Mouse Tester](https://github.com/valleyofdoom/MouseTester)** - Проверьте интервал опроса, частоту работы мыши, узнайте о стабильности чувствительности.
 
 - **[NVIDIA Reflex Analyzer](https://www.nvidia.com/en-gb/geforce/news/reflex-latency-analyzer-360hz-g-sync-monitors)** - Полезная утилита для игр с Reflex.
 
