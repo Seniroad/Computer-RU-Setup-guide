@@ -25,7 +25,7 @@
 
 - **[NVIDIA Reflex Analyzer](https://www.nvidia.com/en-gb/geforce/news/reflex-latency-analyzer-360hz-g-sync-monitors)** - Полезная утилита для игр с Reflex.
 
-- **[RTSS](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/)** - В новой версии добавили метрики, полезно (ищите на guru3d или других проверенных источниках бета [версию](https://www.youtube.com/watch?v=7DtEJlx-UQI)).
+- **[RTSS](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/)** - В новой версии добавили полезной метрики (ищите на guru3d или других проверенных источниках бета [версию](https://www.youtube.com/watch?v=7DtEJlx-UQI)).
 
 
 
