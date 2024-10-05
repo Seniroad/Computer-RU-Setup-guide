@@ -26,12 +26,6 @@
 
 - Запустите ``setup.exe`` для установки драйвера
 
-- Откройте cmd и введите следующую команду, чтобы отключить телеметрию
-
-    ```bat
-    reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\Startup\SendTelemetryData" /t REG_DWORD /d "0" /f
-    ```
-
 ## 2 Способ: Установка при помощи NVCleanstall
 
 - Скачайте программу с этого [сайта](https://www.techpowerup.com/download/techpowerup-nvcleanstall/)
