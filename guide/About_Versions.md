@@ -36,11 +36,15 @@
 
 - AllowTelemetry можно установить на 0 в редакциях Windows Server ([1](https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.DataCollection::AllowTelemetry)).
 
-- В 24h2 добавленна замена NDIS(драйвера инетернет адаптера) - NetAdapter Class Extension, который имеет преимущества над старым ([1](https://learn.microsoft.com/ru-ru/windows-hardware/drivers/netcx/)).
+- Начиная с версии Windows 10 2004 комплект драйверов Windows включает в себя модуль расширения класса сетевого адаптера ([NetAdapterCx](https://learn.microsoft.com/ru-ru/windows-hardware/drivers/netcx)]. С версии  Windows 11 24h2 UMDF NetAdapterCx позволяет драйверам сетевого адаптера работать в пользовательском режиме.
+  
+    - Это замена NDIS(драйвера инетернет адаптера) На драйвер с поддержкой NetAdapter Class Extension, который имеет преимущества над старым ([1](https://learn.microsoft.com/ru-ru/windows-hardware/drivers/netcx/)).
 
-  - Также был обновленн WDDM до версии 3.2 ([1](https://learn.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#display-and-graphics-drivers))
- 
-  - В 24h2 из потока инпута (функции GetRawInputData) была убрана связь с DPC от GPU драйвера, что должно положительно сказаться на итоговых результатах.
-    
-  - В 24h2 используется два потока инпута в DWM, вместо трех (23h2).
+- Также в 24h2 были внесены следующие изменения:
+  
+    - Был обновленн WDDM до версии 3.2 ([1](https://learn.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#display-and-graphics-drivers))
+      
+    - Потока инпута (функции GetRawInputData) была убрана связь с DPC от GPU драйвера, что должно положительно сказаться на итоговых результатах.
+
+    - Используется два потока инпута в DWM, вместо трех (23h2).
   
