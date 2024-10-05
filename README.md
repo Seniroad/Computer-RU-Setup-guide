@@ -8,14 +8,14 @@
 **Большая часть гайда это перевод PC-Tuning для ру комьюнити.**
 
 ## Гайд основан на исследованиях данных энтузиастов
+- **Seniro (Создатель, обитаю обычно на CommunityX)**
+- **[div5064 (создатель LLG, внёс большой вклад в создание гайда)](https://shorturl.at/VXwBJ)**
+- **[EXO (создатель LLG, внёс большой вклад в создание гайда)](https://shorturl.at/VXwBJ)**
+- **[BEYOND PERFORMANCE (находится на LLG, есть собственный сервер)](https://discord.gg/xk3HKVPyef)**
+- **[Amitxv(valleyofdoom) (Основа данного руководства)](https://github.com/valleyofdoom/PC-Tuning)**
 - **[Timecard](https://github.com/djdallmann/GamingPCSetup)**
 - **[Calypto](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit)**
-- **[Amitxv(valleyofdoom)](https://github.com/valleyofdoom/PC-Tuning)**
 - **[Boring Boredom](https://github.com/BoringBoredom/PC-Optimization-Hub)**
-- **[EXO (создатель LLG)](https://shorturl.at/VXwBJ)**
-- **[div5064 (создатель LLG)](https://shorturl.at/VXwBJ)**
-- **[BEYOND PERFORMANCE (находится на LLG, есть собственный сервер)](https://discord.gg/xk3HKVPyef)**
-- **Seniro (Создатель, обитаю обычно на CommunityX)**
 
 ## Бенчмаркинг
 - **[FrameView](https://www.nvidia.com/en-gb/geforce/technologies/frameview)** - Слишком нагруженное приложение. Если хотите - используйте. Я не советую использовать её.
