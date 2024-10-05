@@ -11,6 +11,7 @@
 - **[Timecard](https://github.com/djdallmann/GamingPCSetup)**
 - **[Calypto](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit)**
 - **[Amitxv(valleyofdoom)](https://github.com/valleyofdoom/PC-Tuning)**
+- **[Boring Boredom](https://github.com/BoringBoredom/PC-Optimization-Hub)**
 - **[EXO (создатель LLG)](https://shorturl.at/VXwBJ)**
 - **[div5064 (создатель LLG)](https://shorturl.at/VXwBJ)**
 - **[BEYOND PERFORMANCE (находится на LLG, есть собственный сервер)](https://discord.gg/xk3HKVPyef)**
