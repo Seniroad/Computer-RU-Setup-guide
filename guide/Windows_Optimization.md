@@ -69,7 +69,7 @@ C:\files\registry-options.json
 |``disable telemetry``|1. Смягчение телеметрии|N/A|``true``|
 |``disable retrieval of online tips and help in the immersive control panel``|1. Смягчение телеметрии|N/A|``true``|
 |``disable typing insights``|1. Смягчение телеметрии|N/A|``true``|
-|``disable suggestions in the search box and in search home``|1. Смягчение телеметрии<br><br>2. Reducing or disabling intrusive features|N/A|``true``|
+|``disable suggestions in the search box and in search home``|1. Смягчение телеметрии<br><br>2. Уменьшение или отключение навязчивых функций|N/A|``true``|
 |``disable computer is out of support message``|1. Уменьшение или отключение навязчивых элементов|Отключает [это](https://support.microsoft.com/en-us/topic/you-received-a-notification-your-windows-7-pc-is-out-of-support-3278599f-9613-5cc1-e0ee-4f81f623adcf) навязчивое сообщение. Не актуально для пользователей с современной версией Windows|``true``|
 |``disable fault tolerant heap``|2. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает автономное применение Windows средств защиты для предотвращения будущих сбоев на основе каждого приложения ([1](https://learn.microsoft.com/en-us/windows/win32/win7appqual/fault-tolerant-heap)), что может привести к проблемам ([1](https://www.mak.com/mak-one/support/help/knowledge/performance-issues-caused-by-the-fault-tolerant-heap-windows)).|``true``|
 
