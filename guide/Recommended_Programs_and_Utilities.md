@@ -4,7 +4,6 @@
 
 # Установка Windows
 
-# Uupdump
 - [Uupdump](https://uupdump.net/)
   - Гайд по установке:
     
