@@ -41,7 +41,7 @@
 
 ## 4. [Исследования](/guide/Explorations.md)
 
-## [Руководство по работе с Xperf](/guide/xperf_guide.md)
+## 5. [Руководство по работе с Xperf](/guide/xperf_guide.md)
 
 ## Послесловие
 
