@@ -4,5 +4,5 @@
 
 # Установка Windows
 - [Uupdump](https://uupdump.net/)
-
+  - Гайд по установке:
   ![Гайд по установке](https://s3.ezgif.com/tmp/ezgif-3-784ca380a5.gif)
