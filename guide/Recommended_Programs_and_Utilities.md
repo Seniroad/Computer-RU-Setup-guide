@@ -4,13 +4,16 @@
 
 # Установка Windows
 
-- [Uupdump](https://uupdump.net/)
+- [Uupdump](https://uupdump.net/) · актуальный и безопасный вариант для скачивания нужной вам операционной системы. 
     
   ![Гайд по установке](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/cf5c14d21d13b27921eae392ae1ccbbefa61316b/docs/uupdump_guide.mp4)
 
   - После того, как вы открыли `.bat` файл, командная строка будет собирать `.iso` образ. Потребуется некоторое время. В конце будет `enter 0 or q to exit`
 
 
-- [Os.click](https://os.click/en)
+- [Os.click](https://os.click/en) · упрощенное скачивание операционной системы Windows. 
 
 
+# Discord (client)
+
+- 
