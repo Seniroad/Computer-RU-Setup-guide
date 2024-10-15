@@ -7,6 +7,6 @@
 - [Uupdump](https://uupdump.net/)
   - Гайд по установке:
     
-  ![Гайд по установке]([https://s3.ezgif.com/tmp/ezgif-3-e1c31e7da4.gif](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/d4032499042b156c0944135622d79b9a756a9013/docs/uupdump_guide.mp4))
+  ![Гайд по установке](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/d4032499042b156c0944135622d79b9a756a9013/docs/uupdump_guide.mp4)
 
   - После того, как вы открыли `.bat` файл, командная строка будет собирать `.iso` образ. Потребуется некоторое время. В конце будет `enter 0 or q to exit`
