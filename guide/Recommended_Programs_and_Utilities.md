@@ -28,7 +28,7 @@
 - [SpotX](https://github.com/SpotX-Official/SpotX) 🔸 Модифицированный клиент **Spotify** для **Windows**.
 - [Spicetify](https://spicetify.app/) 🔸 Настройте персонализацию **Spotify** так, как вы хотите!
 
-№ Browser
+# Browser
 
 ![uEski3-browsers-transparent](https://github.com/user-attachments/assets/c33e1ddd-286c-4545-a9d1-1cab7e87219f)
 > [!Important]
