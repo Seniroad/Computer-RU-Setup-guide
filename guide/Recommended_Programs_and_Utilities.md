@@ -4,6 +4,8 @@
 
 # Установка Windows
 
+![win](https://github.com/user-attachments/assets/a3f9f159-d6b7-4f07-bde2-8b811f16a8a6)
+
 - [Uupdump](https://uupdump.net/) 🔸 **актуальный** и **безопасный** вариант для скачивания нужной вам **операционной системы**. 
 
   - ![Гайд по установке](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/cf5c14d21d13b27921eae392ae1ccbbefa61316b/docs/uupdump_guide.mp4)
