@@ -30,7 +30,8 @@
 
 # Browser
 
-![browsers](https://github.com/user-attachments/assets/51a3f5bd-b517-423d-94cb-f65cd794cec7)
+![browsers](https://github.com/user-attachments/assets/424b60e7-810d-4c58-a859-5190154e3a9c)
+
 
 > [!Important]
 > [Тесты браузеров](https://privacytests.org/) 
