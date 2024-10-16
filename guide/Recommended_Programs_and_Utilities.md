@@ -13,7 +13,7 @@
 
 # Discord
 
-![discord-logo (1)](https://github.com/user-attachments/assets/2e41705a-28d9-4a6e-b4aa-a6e1a0be6b3f)
+![52](https://github.com/user-attachments/assets/1a2601fc-39c1-4acf-b026-8c9af5463034)
 
 
 > [!WARNING]
