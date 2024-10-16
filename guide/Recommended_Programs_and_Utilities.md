@@ -35,7 +35,7 @@
 ![browsers (1)](https://github.com/user-attachments/assets/85574b3f-457e-417b-8a65-e003ea44e230)
 
 > [!Important]
-> [Тесты браузеров, там тестируется](https://privacytests.org/) 
+> [Тесты браузеров, там тестируются](https://privacytests.org/) 
 
 - [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)
 - [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2)
