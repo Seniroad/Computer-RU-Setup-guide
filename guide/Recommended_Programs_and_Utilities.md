@@ -42,3 +42,4 @@
 - [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)
 
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
+- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
