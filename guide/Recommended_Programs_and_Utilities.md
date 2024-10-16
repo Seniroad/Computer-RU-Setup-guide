@@ -12,7 +12,7 @@
 
 
 # Discord
-![dis_symb](https://github.com/user-attachments/assets/48410a69-41c0-436f-a52e-374b39c3c1e9)
+![discord-logo](https://github.com/user-attachments/assets/9140de4f-96a0-4bdf-b84e-ecfe7dbe09a4)
 
 
 > [!WARNING]
