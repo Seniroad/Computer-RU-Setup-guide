@@ -15,7 +15,7 @@
 
 # Discord
 
-![ds](https://github.com/user-attachments/assets/47f919d5-1887-4340-85a3-a3bb0ba7dfb0)
+![ds (1)](https://github.com/user-attachments/assets/74961f8d-96cc-4f14-a8f5-645713f4ab0c)
 
 > [!WARNING]
 > Данные клиенты частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
