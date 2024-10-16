@@ -12,7 +12,8 @@
 
 
 # Discord
-![Discord-Symbol](https://github.com/user-attachments/assets/5e1345f7-4992-4ad1-8b45-692dc926235b)
+![dis_symb](https://github.com/user-attachments/assets/48410a69-41c0-436f-a52e-374b39c3c1e9)
+
 
 > [!WARNING]
 > Данные клиенты частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
