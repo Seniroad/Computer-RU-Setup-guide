@@ -13,8 +13,7 @@
 
 # Discord
 
-![52](https://github.com/user-attachments/assets/1a2601fc-39c1-4acf-b026-8c9af5463034)
-
+![discord-logo (1)](https://github.com/user-attachments/assets/91fb5e96-849c-43bc-bdee-30cb3484d297)
 
 > [!WARNING]
 > Данные клиенты частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
@@ -25,7 +24,6 @@
 # Spotify
 
 ![Spotify_Primary_Logo_RGB_Green](https://github.com/user-attachments/assets/e041c309-2cd5-4653-b235-d573bfc5b2eb)
-
 
 - [SpotX](https://github.com/SpotX-Official/SpotX) 🔹 Модифицированный клиент **Spotify** для **Windows**.
 - [Spicetify](https://spicetify.app/) 🔹Настройте персонализацию **Spotify** так, как вы хотите!
