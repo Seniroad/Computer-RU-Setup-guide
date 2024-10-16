@@ -30,7 +30,8 @@
 
 # Browser
 
-![uEski3-browsers-transparent](https://github.com/user-attachments/assets/c33e1ddd-286c-4545-a9d1-1cab7e87219f)
+![browsers](https://github.com/user-attachments/assets/51a3f5bd-b517-423d-94cb-f65cd794cec7)
+
 > [!Important]
 > [Тесты браузеров](https://privacytests.org/) 
 
