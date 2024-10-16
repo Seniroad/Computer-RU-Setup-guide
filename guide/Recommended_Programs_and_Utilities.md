@@ -12,7 +12,8 @@
 
 
 # Discord
-![discord-logo](https://github.com/user-attachments/assets/9140de4f-96a0-4bdf-b84e-ecfe7dbe09a4)
+
+![discord-logo (1)](https://github.com/user-attachments/assets/2e41705a-28d9-4a6e-b4aa-a6e1a0be6b3f)
 
 
 > [!WARNING]
