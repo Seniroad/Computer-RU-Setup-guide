@@ -35,7 +35,7 @@
 ![browsers (1)](https://github.com/user-attachments/assets/85574b3f-457e-417b-8a65-e003ea44e230)
 
 > [!Important]
-> [Тесты браузеров, там тестируются](https://privacytests.org/) 
+> [Тесты приватности браузеров](https://privacytests.org/) 
 
 - [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)
 - [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
