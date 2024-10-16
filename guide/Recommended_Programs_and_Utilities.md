@@ -38,8 +38,8 @@
 > [Тесты браузеров, там тестируются](https://privacytests.org/) 
 
 - [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)
+- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
 - [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2)
 - [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)
 
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
-- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
