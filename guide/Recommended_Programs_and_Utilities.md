@@ -24,5 +24,8 @@
 
 # Spotify
 
+![Spotify_Primary_Logo_RGB_Green](https://github.com/user-attachments/assets/e041c309-2cd5-4653-b235-d573bfc5b2eb)
+
+
 - [SpotX](https://github.com/SpotX-Official/SpotX) 🔹 Модифицированный клиент **Spotify** для **Windows**.
 - [Spicetify](https://spicetify.app/) 🔹Настройте персонализацию **Spotify** так, как вы хотите!
