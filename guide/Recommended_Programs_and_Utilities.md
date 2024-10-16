@@ -12,8 +12,7 @@
 
 
 # Discord
-
-[images](https://s2.ezgif.com/tmp/ezgif-2-340bd0f32a.gif)
+![Discord-Symbol](https://github.com/user-attachments/assets/5e1345f7-4992-4ad1-8b45-692dc926235b)
 
 > [!WARNING]
 > Данные клиенты частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
