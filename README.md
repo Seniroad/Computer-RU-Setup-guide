@@ -8,8 +8,8 @@
 **Большая часть гайда это перевод PC-Tuning для ру комьюнити.**
 
 ## Гайд основан на исследованиях данных энтузиастов
-- **Seniro (Создатель, можно найти на [Revolution](https://discord.gg/PCKDnP9R))**
-- **Segnities (Создатель раздела [Рекомендуемые программы и Утилиты](#рекомендуемые-программы-и-утилиты), можно найти на [Revolution](https://discord.gg/PCKDnP9R))**
+- **Seniro (Создатель, можно найти на [Revolution](https://discord.gg/YzY5PrXD5c))**
+- **Segnities (Создатель раздела [Рекомендуемые программы и Утилиты](#рекомендуемые-программы-и-утилиты), можно найти на [Revolution](https://discord.gg/YzY5PrXD5c))**
 - **[div5064 (создатель LLG, внёс большой вклад в создание гайда)](https://shorturl.at/VXwBJ)**
 - **[EXO (создатель LLG, внёс большой вклад в создание гайда)](https://shorturl.at/VXwBJ)**
 - **[BEYOND PERFORMANCE (находится на LLG, есть собственный сервер)](https://discord.gg/xk3HKVPyef)**
