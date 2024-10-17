@@ -42,7 +42,7 @@
 
 - AllowTelemetry можно установить на 0 в редакциях Windows Server ([1](https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.DataCollection::AllowTelemetry)).
 
-- Начиная с версии Windows 10 2004 комплект драйверов Windows включает в себя модуль расширения класса сетевого адаптера ([NetAdapterCx](https://learn.microsoft.com/ru-ru/windows-hardware/drivers/netcx)]. С версии  Windows 11 24h2 UMDF NetAdapterCx позволяет драйверам сетевого адаптера работать в пользовательском режиме.
+- Начиная с версии Windows 10 2004 комплект драйверов Windows включает в себя модуль расширения класса сетевого адаптера ([NetAdapterCx](https://learn.microsoft.com/ru-ru/windows-hardware/drivers/netcx)). С версии  Windows 11 24h2 UMDF NetAdapterCx позволяет драйверам сетевого адаптера работать в пользовательском режиме.
   
     - Это замена NDIS(драйвера инетернет адаптера) На драйвер с поддержкой NetAdapter Class Extension, который имеет преимущества над старым ([1](https://learn.microsoft.com/ru-ru/windows-hardware/drivers/netcx/)).
 
