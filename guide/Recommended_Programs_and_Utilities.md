@@ -13,6 +13,7 @@
      - После того, как вы открыли `.bat` файл, командная строка будет собирать `.iso` образ. Потребуется некоторое время. В конце будет `enter 0 or q to exit`
 
 - [Os.click](https://os.click/en) 🔸 упрощенное скачивание операционной системы **Windows**.
+- [Comms.ru](https://www.comss.ru/page.php?id=10053) 🔸 можно скачать актуальные образы **Windows** с помощью **Utorrent**.
 
 
 # Discord
@@ -57,3 +58,12 @@
 - [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)
 
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
+
+# Лаунчеры
+
+![alt text](gaming_logo.png)
+
+- [Steam](https://store.steampowered.com/about/)
+  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)
+- [EpicGames](https://store.epicgames.com/en-US/)
+- [Battle.Net](https://us.shop.battle.net/ru-ru)
