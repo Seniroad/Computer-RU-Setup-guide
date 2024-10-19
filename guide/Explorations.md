@@ -13,9 +13,9 @@
 
 Сравним потребление служб на чистой Windows 11 и с выключенными службами:
 
-![servicesON](/docs/servicesON.png)
+![servicesON](/docs/servicesON_ph.png)
 
-![servicesOFF](/docs/ServicesOFF.png)
+![servicesOFF](/docs/ServicesOFF_ph.png)
 
 Как можно заметить, разница в потреблении (Cycles Delta) минимальна. Чтобы понять разницу, можно посмотрть на потребление Process Explorer (proexp64.exe), который не является ресурсоёмкой программой.
 
