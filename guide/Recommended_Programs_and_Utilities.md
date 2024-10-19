@@ -60,7 +60,7 @@
 ![alt text](gaming_logo.png)
 
 - [Steam](https://store.steampowered.com/about/)
-  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper) 🔹отключает ненужные процессы WEB.
+  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper) 
 - [EpicGames](https://store.epicgames.com/en-US/)
 - [Battle.Net](https://us.shop.battle.net/ru-ru)
 ####
