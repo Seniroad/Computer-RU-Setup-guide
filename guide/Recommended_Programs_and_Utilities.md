@@ -70,15 +70,13 @@
 - [EA App](https://www.ea.com/ea-app)🔹игровой лаунчер.
 - [Ubisoft Play](https://www.ubisoft.com/en-gb/ubisoft-connect)🔹игровой лаунчер.
 - [VK Play](https://vkplay.ru/)🔹игровой лаунчер.
-
-
+####
 - [Roblox](https://www.roblox.com/)🔹игровой лаунчер.
   
   - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)🔹это сторонняя замена стандартному загрузчику Roblox, предоставляющая дополнительные полезные функции и улучшения.
   
     - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 🔹 этот gitlab включает в себя быстрые флаги, которые помогают с производительностью и задержками (например, пинг и задержка ввода).
-
-
+####
 - [Curseforge](https://www.curseforge.com/)🔹лаунчер **Minecraft**.
 - [Modrinth](https://modrinth.com/)🔹лаунчер **Minecraft**.
 - [Lunar Client](https://www.lunarclient.com/)🔹лаунчер **Minecraft**.
