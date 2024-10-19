@@ -29,8 +29,7 @@
 
 # Spotify
 
-![spot.png](spot.png)
-- сосать америка
+![alt text](spot.png)
 
 - [Spotify](https://www.spotify.com/de-en/download/other/) 
 - [SpotX](https://github.com/SpotX-Official/SpotX) 🔸 Модифицированный клиент **Spotify** для **Windows**.
