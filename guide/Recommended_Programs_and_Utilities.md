@@ -72,7 +72,6 @@
 - [VK Play](https://vkplay.ru/)🔸игровой лаунчер.
 
 
-
 - [Roblox](https://www.roblox.com/)🔸игровой лаунчер.
   
   - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)🔸это сторонняя замена стандартному загрузчику Roblox, предоставляющая дополнительные полезные функции и улучшения.
@@ -80,12 +79,10 @@
     - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 🔸 этот gitlab включает в себя быстрые флаги, которые помогают с производительностью и задержками (например, пинг и задержка ввода).
 
 
-
-
-- [Curseforge](https://www.curseforge.com/)🔸
-- [Modrinth](https://modrinth.com/)🔸
-- [Lunar Client](https://www.lunarclient.com/)🔸
-- [ATLauncher](https://atlauncher.com/)🔸
-- [Prism Launcher](https://prismlauncher.org/)🔸
-- [Multi MC](https://multimc.org/)🔸
-- [PollyMC](https://github.com/fn2006/PollyMC)🔸
+- [Curseforge](https://www.curseforge.com/)🔸лаунчер **Minecraft**.
+- [Modrinth](https://modrinth.com/)🔸лаунчер **Minecraft**.
+- [Lunar Client](https://www.lunarclient.com/)🔸лаунчер **Minecraft**.
+- [ATLauncher](https://atlauncher.com/)🔸лаунчер **Minecraft**.
+- [Prism Launcher](https://prismlauncher.org/)🔸лаунчер **Minecraft**.
+- [Multi MC](https://multimc.org/)🔸лаунчер **Minecraft**.
+- [PollyMC](https://github.com/fn2006/PollyMC)🔸лаунчер **Minecraft**.
