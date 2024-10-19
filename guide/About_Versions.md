@@ -50,7 +50,7 @@
   
     - Был обновленн WDDM до версии 3.2 ([1](https://learn.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#display-and-graphics-drivers))
       
-    - Потока инпута (функции GetRawInputData) была убрана связь с DPC от GPU драйвера, что должно положительно сказаться на итоговых результатах.
+    - Из потока инпута (функции GetRawInputData) была убрана связь с DPC от GPU драйвера, что должно положительно сказаться на итоговых результатах.
 
     - Используется два потока инпута в DWM, вместо трех (23h2).
   
