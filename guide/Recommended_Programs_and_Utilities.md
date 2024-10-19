@@ -63,10 +63,25 @@
 
 ![alt text](gaming_logo.png)
 
-- [Steam](https://store.steampowered.com/about/)
-  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)
-- [EpicGames](https://store.epicgames.com/en-US/)
-- [Battle.Net](https://us.shop.battle.net/ru-ru)
-- [EA App](https://www.ea.com/ea-app)
-- [Ubisoft Play](https://www.ubisoft.com/en-gb/ubisoft-connect)
-- [VK Play](https://vkplay.ru/)
+- [Steam](https://store.steampowered.com/about/)🔸игровой лаунчер.
+  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)🔸игровой лаунчер.
+- [EpicGames](https://store.epicgames.com/en-US/)🔸игровой лаунчер.
+- [Battle.Net](https://us.shop.battle.net/ru-ru)🔸игровой лаунчер.
+- [EA App](https://www.ea.com/ea-app)🔸игровой лаунчер.
+- [Ubisoft Play](https://www.ubisoft.com/en-gb/ubisoft-connect)🔸игровой лаунчер.
+- [VK Play](https://vkplay.ru/)🔸игровой лаунчер.
+
+- [Roblox](https://www.roblox.com/)🔸игровой лаунчер.
+  
+  - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)🔸это сторонняя замена стандартному загрузчику Roblox, предоставляющая дополнительные полезные функции и улучшения.
+  
+    - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 🔸 этот gitlab включает в себя быстрые флаги, которые помогают с производительностью и задержками (например, пинг и задержка ввода).
+
+
+- [Curseforge](https://www.curseforge.com/)🔸
+- [Modrinth](https://modrinth.com/)🔸
+- [Lunar Client](https://www.lunarclient.com/)🔸
+- [ATLauncher](https://atlauncher.com/)🔸
+- [Prism Launcher](https://prismlauncher.org/)🔸
+- [Multi MC](https://multimc.org/)🔸
+- [PollyMC](https://github.com/fn2006/PollyMC)🔸
