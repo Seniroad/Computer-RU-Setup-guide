@@ -17,7 +17,7 @@
 
 # Discord
 
-![alt text](discord.png)
+![discord.png](discord.png)
 
 > [!WARNING]
 > Данные клиенты частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
@@ -29,7 +29,7 @@
 
 # Spotify
 
-![alt text](spot.png)
+![spot.png](spot.png)
 - сосать америка
 
 - [Spotify](https://www.spotify.com/de-en/download/other/) 
@@ -38,7 +38,7 @@
 
 # Telegram
 
-![telegram](telegram_logo.png)
+![telegram_logo.png](telegram_logo.png)
 
 [orig.Telegram](https://desktop.telegram.org/)
 [AyuGram](https://github.com/AyuGram/AyuGramDesktop) 🔹 клиентский мод **Telegram**. Который имеет дополнительные функции такие как: Режим призрака, позволяющий быть анонимным.
@@ -46,7 +46,7 @@
 [KotatoGram](https://github.com/kotatogram/kotatogram-desktop) 🔹клиентский мод **Telegram**. Более простой визуальный вид, который может вам помочь быстро ответить.
 # Browser
 
-![browser](browsers.png)
+![browsers.png](browsers.png)
 
 > [!Important]
 > [Тесты приватности браузеров](https://privacytests.org/) 
