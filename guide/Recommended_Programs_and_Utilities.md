@@ -17,7 +17,7 @@
 
 # Discord
 
-![alt text](discord_logo-1.png)
+![alt text](discord_update.png)
 
 > [!WARNING]
 > Данные клиенты частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
@@ -29,7 +29,7 @@
 
 # Spotify
 
-![alt text](spot.png)
+![alt text](spotify.png)
 
 - [Spotify](https://www.spotify.com/de-en/download/other/) 
 - [SpotX](https://github.com/SpotX-Official/SpotX) 🔸 Модифицированный клиент **Spotify** для **Windows**.
@@ -37,7 +37,7 @@
 
 # Telegram
 
-![alt text](tg_log.png)
+![alt text](telegram.png)
 
 - [orig.Telegram](https://desktop.telegram.org/)
 - [AyuGram](https://github.com/AyuGram/AyuGramDesktop) 🔹 клиентский мод **Telegram**. Который имеет дополнительные функции такие как: Режим призрака, позволяющий быть анонимным.
@@ -46,7 +46,7 @@
 
 # Browser
 
-![browsers.png](browsers.png)
+![alt text](browser.png)
 
 > [!Important]
 > [Тесты приватности браузеров](https://privacytests.org/) 
