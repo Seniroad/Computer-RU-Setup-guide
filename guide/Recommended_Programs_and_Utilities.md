@@ -52,37 +52,37 @@
 > [!Important]
 > [Тесты приватности браузеров](https://privacytests.org/) 
 
-- [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)
-- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
-- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2)
-- [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)
+- [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)🔸
+- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)🔸
+- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2)🔸
+- [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)🔸
 
-  - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
+  - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)🔸
 
 # 🕹️ Лаунчеры
 
 ![alt text](gaming_logo.png)
 
-- [Steam](https://store.steampowered.com/about/)🔸игровой лаунчер.
-  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)🔸игровой лаунчер.
-- [EpicGames](https://store.epicgames.com/en-US/)🔸игровой лаунчер.
-- [Battle.Net](https://us.shop.battle.net/ru-ru)🔸игровой лаунчер.
-- [EA App](https://www.ea.com/ea-app)🔸игровой лаунчер.
-- [Ubisoft Play](https://www.ubisoft.com/en-gb/ubisoft-connect)🔸игровой лаунчер.
-- [VK Play](https://vkplay.ru/)🔸игровой лаунчер.
+- [Steam](https://store.steampowered.com/about/)🔹игровой лаунчер.
+  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)🔹игровой лаунчер.
+- [EpicGames](https://store.epicgames.com/en-US/)🔹игровой лаунчер.
+- [Battle.Net](https://us.shop.battle.net/ru-ru)🔹игровой лаунчер.
+- [EA App](https://www.ea.com/ea-app)🔹игровой лаунчер.
+- [Ubisoft Play](https://www.ubisoft.com/en-gb/ubisoft-connect)🔹игровой лаунчер.
+- [VK Play](https://vkplay.ru/)🔹игровой лаунчер.
 
 
-- [Roblox](https://www.roblox.com/)🔸игровой лаунчер.
+- [Roblox](https://www.roblox.com/)🔹игровой лаунчер.
   
-  - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)🔸это сторонняя замена стандартному загрузчику Roblox, предоставляющая дополнительные полезные функции и улучшения.
+  - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)🔹это сторонняя замена стандартному загрузчику Roblox, предоставляющая дополнительные полезные функции и улучшения.
   
-    - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 🔸 этот gitlab включает в себя быстрые флаги, которые помогают с производительностью и задержками (например, пинг и задержка ввода).
+    - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 🔹 этот gitlab включает в себя быстрые флаги, которые помогают с производительностью и задержками (например, пинг и задержка ввода).
 
 
-- [Curseforge](https://www.curseforge.com/)🔸лаунчер **Minecraft**.
-- [Modrinth](https://modrinth.com/)🔸лаунчер **Minecraft**.
-- [Lunar Client](https://www.lunarclient.com/)🔸лаунчер **Minecraft**.
-- [ATLauncher](https://atlauncher.com/)🔸лаунчер **Minecraft**.
-- [Prism Launcher](https://prismlauncher.org/)🔸лаунчер **Minecraft**.
-- [Multi MC](https://multimc.org/)🔸лаунчер **Minecraft**.
-- [PollyMC](https://github.com/fn2006/PollyMC)🔸лаунчер **Minecraft**.
+- [Curseforge](https://www.curseforge.com/)🔹лаунчер **Minecraft**.
+- [Modrinth](https://modrinth.com/)🔹лаунчер **Minecraft**.
+- [Lunar Client](https://www.lunarclient.com/)🔹лаунчер **Minecraft**.
+- [ATLauncher](https://atlauncher.com/)🔹лаунчер **Minecraft**.
+- [Prism Launcher](https://prismlauncher.org/)🔹лаунчер **Minecraft**.
+- [Multi MC](https://multimc.org/)🔹лаунчер **Minecraft**.
+- [PollyMC](https://github.com/fn2006/PollyMC)🔹лаунчер **Minecraft**.
