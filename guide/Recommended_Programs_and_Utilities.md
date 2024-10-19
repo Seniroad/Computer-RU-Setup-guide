@@ -16,7 +16,7 @@
 - [Comms.ru](https://www.comss.ru/page.php?id=10053) 🔸 можно скачать актуальные образы **Windows** с помощью **Utorrent**.
 
 
-# 📞 Discord
+# 📞💀 Discord
 
 ![alt text](discord_update.png)
 
