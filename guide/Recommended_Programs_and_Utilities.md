@@ -17,7 +17,7 @@
 
 # Discord
 
-![discord.png](discord.png)
+![alt text](discord.png)
 
 > [!WARNING]
 > Данные клиенты частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
