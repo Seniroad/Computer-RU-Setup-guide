@@ -67,3 +67,6 @@
   - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)
 - [EpicGames](https://store.epicgames.com/en-US/)
 - [Battle.Net](https://us.shop.battle.net/ru-ru)
+- [EA App](https://www.ea.com/ea-app)
+- [Ubisoft Play](https://www.ubisoft.com/en-gb/ubisoft-connect)
+- [VK Play](https://vkplay.ru/)
