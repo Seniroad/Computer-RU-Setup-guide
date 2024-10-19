@@ -37,7 +37,7 @@
 
 # Telegram
 
-![alt text](telegram.png)
+![alt text](telegramm.png)
 
 - [orig.Telegram](https://desktop.telegram.org/)
 - [AyuGram](https://github.com/AyuGram/AyuGramDesktop) 🔹 клиентский мод **Telegram**. Который имеет дополнительные функции такие как: Режим призрака, позволяющий быть анонимным.
