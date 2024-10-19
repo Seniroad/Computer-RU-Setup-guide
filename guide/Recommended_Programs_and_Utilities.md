@@ -52,35 +52,33 @@
 > [!Important]
 > [Тесты приватности браузеров](https://privacytests.org/) 
 
-- [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)🔸
-- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)🔸
-- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2)🔸
-- [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)🔸
+- [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)🔸 браузер на основе **Chromium** с улучшенной производительностью и акцентом на безопасность.
+- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)🔸версия **Chromium** без сервисов **Google**, обеспечивающая приватность и **минимизацию** трекинга.
+- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2)🔸быстрый браузер на основе **Chromium**, с **дополнительными** патчами для повышения безопасности и скорости.
+- [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)🔸**популярный** браузер с открытым **исходным** кодом, **ориентированный** на приватность и **защиту** данных.
 
-  - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)🔸
+  - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)🔸**настройки** и **скрипты** для повышения **приватности**, безопасности и блокировки трекинга в Firefox.
 
 # 🕹️ Лаунчеры
 
 ![alt text](gaming_logo.png)
 
-- [Steam](https://store.steampowered.com/about/)🔹игровой лаунчер.
-  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)🔹игровой лаунчер.
-- [EpicGames](https://store.epicgames.com/en-US/)🔹игровой лаунчер.
-- [Battle.Net](https://us.shop.battle.net/ru-ru)🔹игровой лаунчер.
-- [EA App](https://www.ea.com/ea-app)🔹игровой лаунчер.
-- [Ubisoft Play](https://www.ubisoft.com/en-gb/ubisoft-connect)🔹игровой лаунчер.
-- [VK Play](https://vkplay.ru/)🔹игровой лаунчер.
+- [Steam](https://store.steampowered.com/about/)🔹**крупнейшая** игровая платформа с **широким** ассортиментом **игр** и **сервисов**, таких как **Steam Workshop**.
+  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper) 🔹отключает ненужные процессы WEB.
+- [EpicGames](https://store.epicgames.com/en-US/)🔹привлек внимание множеством **бесплатных** игр и **эксклюзивов**.
+- [Battle.Net](https://us.shop.battle.net/ru-ru)🔹Удобен для игр Blizzard и часто используется среди пользователей из СНГ.
+- [VK Play](https://vkplay.ru/)🔹свежий **лаунчер** для **российского** рынка, раннее известный как **Mail Games**. 
 ####
-- [Roblox](https://www.roblox.com/)🔹игровой лаунчер.
+- [Roblox](https://www.roblox.com/)🔹официальный игровой лаунчер **Roblox**, поддерживающий **широкий** выбор игр, созданным **пользователями**.
   
-  - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)🔹это сторонняя замена стандартному загрузчику Roblox, предоставляющая дополнительные полезные функции и улучшения.
+  - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)🔹это **сторонняя** замена стандартному загрузчику **Roblox**, предоставляющая **дополнительные** полезные функции и **улучшения**.
   
-    - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 🔹 этот gitlab включает в себя быстрые флаги, которые помогают с производительностью и задержками (например, пинг и задержка ввода).
+    - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 🔹 набор **быстрых** флагов для оптимизации **производительности**, снижения **пинга** и **задержки** ввода в **Roblox**.
 ####
-- [Curseforge](https://www.curseforge.com/)🔹лаунчер **Minecraft**.
-- [Modrinth](https://modrinth.com/)🔹лаунчер **Minecraft**.
-- [Lunar Client](https://www.lunarclient.com/)🔹лаунчер **Minecraft**.
-- [ATLauncher](https://atlauncher.com/)🔹лаунчер **Minecraft**.
-- [Prism Launcher](https://prismlauncher.org/)🔹лаунчер **Minecraft**.
-- [Multi MC](https://multimc.org/)🔹лаунчер **Minecraft**.
-- [PollyMC](https://github.com/fn2006/PollyMC)🔹лаунчер **Minecraft**.
+- [Curseforge](https://www.curseforge.com/)🔹лаунчер для установки и управления модами **Minecraft**.
+- [Modrinth](https://modrinth.com/)🔹 лаунчер с удобным интерфейсом для поиска и установки **Minecraft** модификаций.
+- [Lunar Client](https://www.lunarclient.com/)🔹лаунчер с предустановленными модами для повышения **FPS** и улучшения **PvP-игры.**
+- [ATLauncher](https://atlauncher.com/)🔹лаунчер для установки **модпаков** и **индивидуальных** настроек.
+- [Prism Launcher](https://prismlauncher.org/)🔹открытый **Minecraft** лаунчер с поддержкой **модов** и **мультиаккаунтов**.
+- [Multi MC](https://multimc.org/)🔹 мощный лаунчер для управления несколькими версиями **Minecraft** и **модами**.
+- [PollyMC](https://github.com/fn2006/PollyMC)🔹форк **MultiMC** с улучшениями **производительности** и **удобством** использования.
