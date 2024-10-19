@@ -277,7 +277,7 @@ for %a in ("SysWOW64" "System32") do (if exist "%windir%\%~a\OneDriveSetup.exe" 
 
 - В разделе ``Система -> Дополнительные компоненты`` удалите все, что вам не нужно.
 
-- Если Windows Defender был отключен на этапе [Объединить параметры реестра](#импортирования-настроек-в-регистр), ``smartscreen.exe`` игнорирует ключ реестра, контролирующий постоянный запуск в фоновом режиме на более поздних версиях Windows. По этой причине откройте ``cmd`` от имени ``TrustedInstaller`` с помощью команды ``C:\bin\MinSudo.exe --TrustedInstaller --Privileged`` и введите следующую команду для удаления файла
+- Если Windows Defender был отключен на этапе [Объединить параметры реестра](#импортирования-настроек-в-регистр), ``smartscreen.exe`` игнорирует ключ реестра, контролирующий постоянный запуск в фоновом режиме на более поздних версиях Windows. По этой причине откройте ``cmd`` от имени ``TrustedInstaller`` с помощью команды ``C:\files\MinSudo.exe --TrustedInstaller --Privileged`` и введите следующую команду для удаления файла
 
     ```bat
     taskkill /f /im smartscreen.exe > nul 2>&1 & ren C:\Windows\System32\smartscreen.exe smartscreen.exee
