@@ -24,7 +24,6 @@
 - [Discord](https://discord.com/)
 - [OpenAsar](https://openasar.dev/) 🔹 мод для **Discord**. Переписана часть кода **Discord** для рабочего стола, что делает его более быстрым и добавляет больше функций.
 - [Vencord](https://vencord.dev/) 🔹 мод для **Discord**. Множественные плагины, которые могут упростить ваш опыт использование дискордом.
-- [LegCord](https://legcord.app/) 🔹 **клиентский** Discord, который как утверждает разработчик, является быстрее и конфидициальнее. 
 # 🎵 Spotify
 
 ![alt text](spotify.png)
@@ -50,11 +49,10 @@
 
 - [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)
 - [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
-- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2)
 - [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)
 
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
-
+- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔸 Форк FireFox
 # 🕹️ Лаунчеры
 
 ![alt text](gaming_logo.png)
@@ -75,4 +73,3 @@
 - [Modrinth](https://modrinth.com/)
 - [Lunar Client](https://www.lunarclient.com/)
 - [Prism Launcher](https://prismlauncher.org/)
-- [PollyMC](https://github.com/fn2006/PollyMC)
