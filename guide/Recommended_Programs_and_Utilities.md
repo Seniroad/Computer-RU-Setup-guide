@@ -53,7 +53,7 @@
 
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
 - [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔸 Форк FireFox
-# 🕹️ Лаунчеры
+# 🕹️ Лаунчеры v1
 
 ![alt text](gaming_logo.png)
 
@@ -61,15 +61,13 @@
   - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper) 
 - [EpicGames](https://store.epicgames.com/en-US/)
 - [Battle.Net](https://us.shop.battle.net/ru-ru)
-####
-####
+# 👾 Roblox
 - [Roblox](https://www.roblox.com/)
   
   - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)
   
     - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 
-####
-####
+# 🟢 Minecraft клиенты
 - [Modrinth](https://modrinth.com/)
 - [Lunar Client](https://www.lunarclient.com/)
 - [Prism Launcher](https://prismlauncher.org/)
