@@ -64,7 +64,7 @@
 
 # 🟢 Minecraft клиенты
 
-![alt text](minecraft_update.png)
+![alt text](min_logo.png)
 
 - [Modrinth](https://modrinth.com/)
 - [Lunar Client](https://www.lunarclient.com/)
