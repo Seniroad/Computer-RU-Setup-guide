@@ -53,7 +53,7 @@
 
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
 - [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔸 Форк FireFox
-# 🕹️ Лаунчеры v1
+# 🕹️ Лаунчеры
 
 ![alt text](gaming_logo.png)
 
