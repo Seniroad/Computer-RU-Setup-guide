@@ -63,6 +63,9 @@
 - [Battle.Net](https://us.shop.battle.net/ru-ru)
 
 # 🟢 Minecraft клиенты
+
+![alt text](minecraft.png)
+
 - [Modrinth](https://modrinth.com/)
 - [Lunar Client](https://www.lunarclient.com/)
 - [Prism Launcher](https://prismlauncher.org/)
