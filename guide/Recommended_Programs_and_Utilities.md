@@ -61,13 +61,15 @@
   - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper) 
 - [EpicGames](https://store.epicgames.com/en-US/)
 - [Battle.Net](https://us.shop.battle.net/ru-ru)
+
+# 🟢 Minecraft клиенты
+- [Modrinth](https://modrinth.com/)
+- [Lunar Client](https://www.lunarclient.com/)
+- [Prism Launcher](https://prismlauncher.org/)
+
 # 👾 Roblox
 - [Roblox](https://www.roblox.com/)
   
   - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)
   
     - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 
-# 🟢 Minecraft клиенты
-- [Modrinth](https://modrinth.com/)
-- [Lunar Client](https://www.lunarclient.com/)
-- [Prism Launcher](https://prismlauncher.org/)
