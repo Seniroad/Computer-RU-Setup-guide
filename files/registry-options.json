@@ -16,7 +16,7 @@
     "disable fast startup": true,
     "disable customer experience improvement program": true,
     "disable windows error reporting": true,
-    "disable clipboard history": true,
+    "disable clipboard history": false,
     "disable activity feed": true,
     "disable advertising id": true,
     "disable autoplay": true,
@@ -37,6 +37,7 @@
     "disable typing insights": true,
     "disable suggestions in the search box and in search home": true,
     "disable computer is out of support message": true,
-    "disable fault tolerant heap": true
+    "disable fault tolerant heap": true,
+	"setup mmcss and quantum on optimal value": false
   }
 }

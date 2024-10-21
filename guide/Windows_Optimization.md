@@ -50,7 +50,7 @@ C:\files\registry-options.json
 |``disable fast startup``|1. Уменьшение или отключение навязчивых элементов|Вмешивается в процесс выключения в том смысле, что система не переходит в S5, что может привести к неожиданным проблемам ([объяснение](https://www.youtube.com/watch?v=OBGxt8zhbRk)). Соответствующую информацию см. в разделе [Быстрый запуск, переход в ждущий режим и гибернация](#Быстрый-запуск,-переход-в-ждущий-режим-и-гибернация). Можно завершить работу без отключения быстрого запуска, удерживая ``Shift`` при нажатии ``Выключить`` в меню Пуск. Однако недостатком этого способа является то, что вы можете забыть удерживать клавишу ``Shift``.|``true``|
 |``disable customer experience improvement program``|1. Смягчение телеметрии ([1](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj618322(v=ws.11)))|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
 |``disable windows error reporting``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable clipboard history``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable clipboard history``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``false``|
 |``disable activity feed``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
 |``disable advertising id``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
 |``disable autoplay``|1. Снижение риска безопасности|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
@@ -60,8 +60,8 @@ C:\files\registry-options.json
 |``disable microsoft store push to install feature``|1. Снижение риска безопасности|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
 |``mitigate web-based search info``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
 |``disable sending inking and typing data to microsoft``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable automatic maintenance``|2. Получение более тонкого контроля над рассматриваемой функцией|N/A|``true``|
-|``disable program compatibility assistant``|2. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает анонимное применение изменений Windows после запуска средств устранения неполадок|``true``|
+|``disable automatic maintenance``|1. Получение более тонкого контроля над рассматриваемой функцией|N/A|``true``|
+|``disable program compatibility assistant``|1. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает анонимное применение изменений Windows после запуска средств устранения неполадок|``true``|
 |``disable remote assistance``|1. Снижение риска безопасности|N/A|``true``|
 |``disable sign-in and lock last interactive user after a restart``|1. Снижение риска безопасности ([1](https://www.stigviewer.com/stig/windows_server_2012_2012_r2_member_server/2014-06-30/finding/V-43245))|N/A|``true``|
 |``show file extensions``|1. Снижение риска безопасности ([1](https://www.youtube.com/watch?v=nYdS3FIu3rI))|N/A |``true``|
@@ -71,8 +71,8 @@ C:\files\registry-options.json
 |``disable typing insights``|1. Смягчение телеметрии|N/A|``true``|
 |``disable suggestions in the search box and in search home``|1. Смягчение телеметрии<br><br>2. Уменьшение или отключение навязчивых функций|N/A|``true``|
 |``disable computer is out of support message``|1. Уменьшение или отключение навязчивых элементов|Отключает [это](https://support.microsoft.com/en-us/topic/you-received-a-notification-your-windows-7-pc-is-out-of-support-3278599f-9613-5cc1-e0ee-4f81f623adcf) навязчивое сообщение. Не актуально для пользователей с современной версией Windows|``true``|
-|``disable fault tolerant heap``|2. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает автономное применение Windows средств защиты для предотвращения будущих сбоев на основе каждого приложения ([1](https://learn.microsoft.com/en-us/windows/win32/win7appqual/fault-tolerant-heap)), что может привести к проблемам ([1](https://www.mak.com/mak-one/support/help/knowledge/performance-issues-caused-by-the-fault-tolerant-heap-windows)).|``true``|
-
+|``disable fault tolerant heap``|1. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает автономное применение Windows средств защиты для предотвращения будущих сбоев на основе каждого приложения ([1](https://learn.microsoft.com/en-us/windows/win32/win7appqual/fault-tolerant-heap)), что может привести к проблемам ([1](https://www.mak.com/mak-one/support/help/knowledge/performance-issues-caused-by-the-fault-tolerant-heap-windows)).|``true``|
+|``setup mmcss and quantum on optimal value``|1. Выставление оптимальных параметров<br><br>2. Снижение нагрузки на процессор|Применяет оптимальные значения для удобства|``false``|
 
 - Откройте PowerShell от администратора (не через Win+R, и ручками тоже не получится запустить) и введите
 

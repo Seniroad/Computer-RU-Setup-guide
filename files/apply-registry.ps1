@@ -823,6 +823,28 @@ $entries = @{
             "apply_if" = @("disable fault tolerant heap")
         }
     )
+	"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile"                                              = @(
+		@{
+			"key_name" = "NetworkThrottlingIndex"
+			"value"    = 10
+			"type"     = "REG_DWORD"
+			"apply_if" = @("setup mmcss and quantum on optimal value")
+		}
+		@{
+			"key_name" = "SystemResponsiveness"
+			"value"    = 10
+			"type"     = "REG_DWORD"
+			"apply_if" = @("setup mmcss and quantum on optimal value")
+		}
+	)
+	"HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl"                                                                       = @(
+		@{
+			"key_name" = "Win32PrioritySeparation"
+			"value"    = 24
+			"type"     = "REG_DWORD"
+			"apply_if" = @("setup mmcss and quantum on optimal value")
+		}
+	)
 }
 
 function Is-Admin() {
