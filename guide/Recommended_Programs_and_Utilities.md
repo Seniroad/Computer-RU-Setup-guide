@@ -73,6 +73,6 @@
 # 👾 Roblox
 - [Roblox](https://www.roblox.com/)
   
-  - [bloxtraplabs](https://github.com/bloxstraplabs/bloxstrap)
+  - [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap)
   
     - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 
