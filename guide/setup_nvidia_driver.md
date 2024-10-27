@@ -95,9 +95,9 @@
 
     - На некоторых графических процессорах тактовая частота может с небольшим отрывом превышать установленную вами. Во избежание нестабильной работы убедитесь, что она настроена соответствующим образом.
 
-    ```bat
-    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f
-    ```
+``` bat
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f
+```
 
 ## Настройка NVIDIA Inspector
 
@@ -124,6 +124,6 @@
     - на некоторых конфигурациях может быть не активен.
 
 ```cmd
-    rm /Q C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_dcf94619172aceb0\Display.NvContainer\NvMessageBus.dll
+del /Q C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_dcf94619172aceb0\Display.NvContainer\NvMessageBus.dll
 ```
 - Запускайте команду через NSudo, чтобы избежать проблем с доступом.
