@@ -113,7 +113,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08
 
   - rBAR - Size Limit
 
-- Отключите ``CUDA - Force P2 State``, чтобы предотвратить снижение тактовой частоты памяти во время рабочих нагрузок CUDA, когда она переходит в P-State 2 ([1](/docs/вcuda-force-p2-state-analysis.png))
+- Отключите ``CUDA - Force P2 State``, чтобы предотвратить снижение тактовой частоты памяти во время рабочих нагрузок CUDA, когда она переходит в P-State 2 ([1](/docs/cuda-force-p2-state-analysis.png))
 
     - Также еще одна причина отключить данный пункт это предотвращение понижения частоты памяти во время стресс-тестирования.
 
