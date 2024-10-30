@@ -145,7 +145,7 @@ irm https://massgrave.dev/get | iex
 - [DirectX](https://www.microsoft.com/en-gb/download/details.aspx?id=8109)
 
 
-## Настройка Параметров Windows и конфигурация девайсов
+## Базовая настройка некоторых параметров
 - Дальше все настройки можно применять, используя ``cmd``.
 
 По желанию установите максимальный возраст пароля, чтобы он никогда не истекал, чтобы Windows периодически запрашивала смену или ввод пароля ([1](https://www.tenforums.com/tutorials/87386-change-maximum-minimum-password-age-local-accounts-windows-10-a.html))
@@ -191,7 +191,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
 
 Отключите все ненужные разрешения в разделе ``Приватность``, нажав ``Win+I``.
 
-Только для Windows Server:
+## Настройка политик для Windows Server
 
 - В диспетчере сервера перейдите в раздел ``Управление`` -> ``Свойства диспетчера сервера`` и включите опцию, запрещающую автоматический запуск диспетчера сервера
 
