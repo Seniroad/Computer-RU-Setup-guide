@@ -160,12 +160,6 @@ net accounts /maxpwage:unlimited
 DISM /Online /Set-ReservedStorageState /State:Disabled
 ```
 
-По желанию очистите папку WinSxS, чтобы уменьшить ее размер ([1](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder?view=windows-11)). Обратите внимание, что это может быть длительным процессом
-
-```bat
-DISM /Online /Cleanup-Image /StartComponentCleanup /ResetBase
-```
-
 Настройте имя операционной системы, рекомендуется задать ему какое-нибудь значимое или уникальное название, например ``Windows 11 GAMES`` или ``Windows 11 Default`` для наглядности при двойной загрузке. Ярлык раздела также можно переименовать аналогичным образом для наглядности
 
 ```bat
