@@ -122,8 +122,3 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08
 - ```NvMessageBus.dll``` Вызывает большое количество циклов, поэтому его отключение положительно скажется на потреблении в фоне.
 
     - на некоторых конфигурациях может быть не активен.
-
-```cmd
-del /Q C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_dcf94619172aceb0\Display.NvContainer\NvMessageBus.dll
-```
-- Запускайте команду через NSudo, чтобы избежать проблем с доступом.
