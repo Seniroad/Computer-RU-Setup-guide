@@ -10,12 +10,7 @@
 
   - ![Гайд по установке](/docs/uupdump_guide.mp4)
 
-     - После того, как вы открыли `.bat` файл, командная строка будет собирать `.iso` образ. Потребуется некоторое время. В конце будет `enter 0 or q to exit`
-
-- [Comms.ru](https://www.comss.ru/page.php?id=10053) 🔸 можно скачать актуальные образы **Windows** с помощью **Utorrent**.
-
-
-# 📞💀 Discord
+# 📞 Discord
 
 ![Discord](/docs/discord_update.png)
 
@@ -24,9 +19,9 @@
 
 - [Discord](https://discord.com/)
 
-- [OpenAsar](https://openasar.dev/) 🔹 мод для **Discord**. Переписана часть кода **Discord** для рабочего стола, что делает его более быстрым и добавляет больше функций.
+- [OpenAsar](https://openasar.dev/) 
 
-- [Vencord](https://vencord.dev/) 🔹 мод для **Discord**. Множественные плагины, которые могут упростить ваш опыт использование дискордом.
+- [Vencord](https://vencord.dev/) 
 
 # 🎵 Spotify
 
@@ -34,9 +29,9 @@
 
 - [Spotify](https://www.spotify.com/de-en/download/other/)
 
-- [SpotX](https://github.com/SpotX-Official/SpotX) 🔸 модифицированный клиент **Spotify** для **Windows**.
+- [SpotX](https://github.com/SpotX-Official/SpotX) 
 
-- [Spicetify](https://spicetify.app/) 🔸 настройте персонализацию **Spotify** так, как вы хотите!
+- [Spicetify](https://spicetify.app/)
 
 # 📘 Telegram
 
@@ -44,9 +39,9 @@
 
 - [Telegram](https://desktop.telegram.org/)
 
-- [AyuGram](https://github.com/AyuGram/AyuGramDesktop) 🔹 клиентский мод **Telegram**. Является одним из лучших модификаций, так как имеет обширный функционал, как **"Режим Призрака"**.
+- [AyuGram](https://github.com/AyuGram/AyuGramDesktop)
 
-- [MaterialGram](https://github.com/kukuruzka165/materialgram) 🔹клиентский мод **Telegram**. Улучшенное визуализация программы социальной сети и удаление мусора.
+- [MaterialGram](https://github.com/kukuruzka165/materialgram)
 
 # 🌎 Браузеры
 
@@ -63,7 +58,7 @@
 
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
 
-- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔸 Форк FireFox
+- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔹 Форк FireFox
 
 # 🕹️ Лаунчеры
 
@@ -76,21 +71,3 @@
 - [EpicGames](https://store.epicgames.com/en-US/)
 
 - [Battle.Net](https://us.shop.battle.net/ru-ru)
-
-# 🟢 Minecraft клиенты
-
-![min_logo](/docs/min_logo.png)
-
-- [Modrinth](https://modrinth.com/)
-
-- [Lunar Client](https://www.lunarclient.com/)
-
-- [Prism Launcher](https://prismlauncher.org/)
-
-# 👾 Roblox
-
-- [Roblox](https://www.roblox.com/)
-  
-  - [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap)
-  
-    - [Performance FFlags](https://gitlab.com/kjwl/roblox-client-optimizer/-/blob/performance-fflags/README.md#performance-fflags) 
