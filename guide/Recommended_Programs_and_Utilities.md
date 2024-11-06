@@ -17,7 +17,7 @@
 
   - [Nvcleanstall](https://nvcleanstall.net/)
 
-- [Drivers and Support for Processors and Graphics](https://www.amd.com/en/support/download/drivers.html)
+- [AMD Drivers and Support for Processors and Graphics](https://www.amd.com/en/support/download/drivers.html)
 
   - [Radeon Software Slimmer](https://github.com/GSDragoon/RadeonSoftwareSlimmer)
 ####
