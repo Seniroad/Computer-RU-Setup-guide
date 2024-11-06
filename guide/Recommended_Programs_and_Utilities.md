@@ -4,7 +4,7 @@
 
 # 🖥️ Установка Windows
 
-![win](https://github.com/user-attachments/assets/a3f9f159-d6b7-4f07-bde2-8b811f16a8a6)
+![Windows logo](https://github.com/user-attachments/assets/a3f9f159-d6b7-4f07-bde2-8b811f16a8a6)
 
 - [Uupdump](https://uupdump.net/)
 
@@ -12,13 +12,13 @@
 
 # ⚙️ Постпереустановочные инструменты
 
-![alt text](gear.png)
+![Gear logo](gear.png)
 
-- [Необходимые библиотеки](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA:~:text=%D0%BF%D1%80%D0%BE%D0%B8%D0%B3%D1%80%D1%8B%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%2C%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20VLC-,%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA,-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D0%B5%20%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5)
+- [Nvcleanstall](https://nvcleanstall.net/)
 
 # 📞 Discord
 
-![Discord](/docs/discord_update.png)
+![Discord logo](/docs/discord_update.png)
 
 > [!WARNING]
 > Если вы используете клиенты, то они частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
@@ -31,7 +31,7 @@
 
 # 🎵 Spotify
 
-![Spotify](/docs/spotify.png)
+![Spotify logo](/docs/spotify.png)
 
 - [Spotify](https://www.spotify.com/de-en/download/other/)
 
@@ -41,7 +41,7 @@
 
 # 📘 Telegram
 
-![Telegram](/docs/telegram120.png)
+![Telegramlogo](/docs/telegram120.png)
 
 - [Telegram](https://desktop.telegram.org/)
 
@@ -51,7 +51,7 @@
 
 # 🌎 Браузеры
 
-![Browser](/docs/browser.png)
+![Browser logo](/docs/browser.png)
 
 > [!Important]
 > [Тесты приватности браузеров](https://privacytests.org/) 
@@ -70,7 +70,7 @@
 
 # 🕹️ Лаунчеры
 
-![gaming_logo](/docs/gaming_logo.png)
+![Game logo](/docs/gaming_logo.png)
 
 - [Steam](https://store.steampowered.com/about/)
 
