@@ -95,3 +95,9 @@
 - [EpicGames](https://store.epicgames.com/en-US/)
 
 - [Battle.Net](https://us.shop.battle.net/ru-ru)
+
+# 💡 Прочее
+
+![Other Logo](other.png)
+
+- **Comming soon..**
