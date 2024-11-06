@@ -44,7 +44,7 @@
 
 ## 5. [Руководство по работе с Xperf](/guide/xperf_guide.md)
 
-## [Рекомендуемые программы и утилиты](/guide/Recommended_Programs_and_Utilities.md)
+## 6. [Рекомендуемые программы и утилиты](/guide/Recommended_Programs_and_Utilities.md)
 
 ## Послесловие
 
