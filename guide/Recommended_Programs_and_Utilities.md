@@ -56,6 +56,8 @@
 
 - [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)
 
+  - [Install FireFox by valleyofdoom](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/files/install-firefox_by_amit.ps1)
+
   - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
 
 - [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔹 Форк FireFox
