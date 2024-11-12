@@ -4,7 +4,7 @@
 
 # 🖥️ Установка Windows
 
-![Windows logo](https://github.com/user-attachments/assets/a3f9f159-d6b7-4f07-bde2-8b811f16a8a6)
+![alt text](win.png)
 
 - [Uupdump](https://uupdump.net/)
 
@@ -12,7 +12,8 @@
 
 # ⚙️ Постпереустановочные инструменты
 
-![Gear logo](gear.png)
+![alt text](gear-1.png)
+
 - [Official Nvidia Drivers](https://www.nvidia.com/en-us/drivers/)
 
   - [Nvcleanstall](https://nvcleanstall.net/)
