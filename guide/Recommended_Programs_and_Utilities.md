@@ -99,6 +99,6 @@
 
 # 💡 Прочее
 
-![Other Logo](other.png)
+![alt text](other.png)
 
 - **Comming soon..**
