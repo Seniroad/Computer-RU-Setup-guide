@@ -12,7 +12,7 @@
 
 # ⚙️ Постпереустановочные инструменты
 
-![alt text](gear-1.png)
+![Gear](gear120.png)
 
 - [Official Nvidia Drivers](https://www.nvidia.com/en-us/drivers/)
 
