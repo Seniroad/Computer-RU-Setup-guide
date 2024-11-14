@@ -340,7 +340,7 @@ for %a in ("SysWOW64" "System32") do (if exist "%windir%\%~a\OneDriveSetup.exe" 
 ## Spectre, Meltdown и микрокод процессора
 
 > [!WARNING]
-> Данный раздел актуален только для Windows 10 и/или процессоров Intel до 9 поколения включительною
+> Данный раздел актуален только для Windows 10 и/или процессоров Intel до 9 поколения включительно.
 
 - Скачайте [InSpectre](https://www.grc.com/inspectre.htm) и проверьте показатель Performance. В случае если у вас не стоит ``GOOD`` , то попробуйте отключить один из пунктов. 
 
