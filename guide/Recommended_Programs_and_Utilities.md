@@ -8,7 +8,7 @@
 
 - [**Uupdump**](https://uupdump.net/)
 
-  - ![Гайд по установке](/docs/uupdump_guide.mp4)
+  - ![***Гайд по установке***](/docs/uupdump_guide.mp4)
 
 # ⚙️ Постпереустановочные инструменты
 
@@ -16,7 +16,7 @@
 
 - [**Official Nvidia Drivers**](https://www.nvidia.com/en-us/drivers/)
 
-  - [Nvcleanstall](https://nvcleanstall.net/)
+  - [***Nvcleanstall***](https://nvcleanstall.net/)
 
 - [**AMD Drivers and Support for Processors and Graphics**](https://www.amd.com/en/support/download/drivers.html)
 
