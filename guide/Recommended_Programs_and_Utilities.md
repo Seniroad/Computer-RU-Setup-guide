@@ -8,26 +8,26 @@
 
 - [**Uupdump**](https://uupdump.net/)
 
-  - !***[Гайд по установке]***(/docs/uupdump_guide.mp4)
+  - ![***Гайд по установке***](/docs/uupdump_guide.mp4)
 
 # ⚙️ Постпереустановочные инструменты
 
 ![Gear](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/gear120.png)
 
-- **[Official Nvidia Drivers]**(https://www.nvidia.com/en-us/drivers/)
+- [**Official Nvidia Drivers**](https://www.nvidia.com/en-us/drivers/)
 
-  - ***[***Nvcleanstall]***(https://nvcleanstall.net/)
+  - [***Nvcleanstall***](https://nvcleanstall.net/)
 
 - [**AMD Drivers and Support for Processors and Graphics**](https://www.amd.com/en/support/download/drivers.html)
 
-  - **[Radeon Software Slimmer]**(https://github.com/GSDragoon/RadeonSoftwareSlimmer)
-  - **[Universal x86 Tuning Utility]**(https://amdaputuningutility.com/)
-- **[Snappy Driver Installer]**(https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2)
-- **[MSI Afterburner]**(https://www.msi.com/Landing/afterburner/graphics-cards)
+  - [**Radeon Software Slimmer**](https://github.com/GSDragoon/RadeonSoftwareSlimmer)
+  - [**Universal x86 Tuning Utility**](https://amdaputuningutility.com/)
+- [**Snappy Driver Installer**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2)
+- [**MSI Afterburner**](https://www.msi.com/Landing/afterburner/graphics-cards)
 ####
-- **[Установка библиотек]**(https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA)
-- **[Java]**(https://www.java.com/download/ie_manual.jsp)
-  - **[Adoptium]**(https://adoptium.net/)
+- [**Установка библиотек**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA)
+- [**Java**](https://www.java.com/download/ie_manual.jsp)
+  - [**Adoptium**](https://adoptium.net/)
 ####
 - [7-Zip](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-7-zip)
 - [Office Tool](https://github.com/YerongAI/Office-Tool)
