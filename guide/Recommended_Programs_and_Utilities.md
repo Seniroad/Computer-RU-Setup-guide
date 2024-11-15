@@ -4,7 +4,7 @@
 
 # 🖥️ Установка Windows
 
-![alt text](win.png)
+![alt text](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/win.png)
 
 - [Uupdump](https://uupdump.net/)
 
@@ -12,7 +12,7 @@
 
 # ⚙️ Постпереустановочные инструменты
 
-![Gear](docs/gear120.png)
+![Gear](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/gear120.png)
 
 - [Official Nvidia Drivers](https://www.nvidia.com/en-us/drivers/)
 
