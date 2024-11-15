@@ -99,6 +99,6 @@
 
 # 💡 Прочее
 
-![alt text](other.png)
+![Other](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/other.png)
 
 - **Comming soon..**
