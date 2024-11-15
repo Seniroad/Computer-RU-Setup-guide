@@ -8,7 +8,7 @@
 
 - [**Uupdump**](https://uupdump.net/)
 
-  - ![***Гайд по установке***](/docs/uupdump_guide.mp4)
+  - ![***Гайд по установке***](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/uupdump_guide.mp4)
 
 # ⚙️ Постпереустановочные инструменты
 
