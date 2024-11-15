@@ -29,9 +29,9 @@
 - [**Java**](https://www.java.com/download/ie_manual.jsp)
   - [***Adoptium***](https://adoptium.net/)
 ####
-- [7-Zip](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-7-zip)
-- [Office Tool](https://github.com/YerongAI/Office-Tool)
-- [VLC](https://www.videolan.org/)
+- [**7-Zip**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-7-zip)
+- [**Office Tool**](https://github.com/YerongAI/Office-Tool)
+- [**VLC**](https://www.videolan.org/)
 
 # 📞 Discord
 
@@ -40,62 +40,62 @@
 > [!WARNING]
 > Если вы используете клиенты, то они частично нарушают **ToS** Дискорда, поэтому используйте на свой страх и риск.
 
-- [Discord](https://discord.com/)
+- [**Discord**](https://discord.com/)
 
-- [OpenAsar](https://openasar.dev/) 
+- [**OpenAsar**](https://openasar.dev/) 
 
-- [Vencord](https://vencord.dev/) 
+- [**Vencord**](https://vencord.dev/) 
 
 # 🎵 Spotify
 
 ![Spotify logo](/docs/spotify.png)
 
-- [Spotify](https://www.spotify.com/de-en/download/other/)
+- [**Spotify**](https://www.spotify.com/de-en/download/other/)
 
-- [SpotX](https://github.com/SpotX-Official/SpotX) 
+- [**SpotX**](https://github.com/SpotX-Official/SpotX) 
 
-- [Spicetify](https://spicetify.app/)
+- [**Spicetify**](https://spicetify.app/)
 
 # 📘 Telegram
 
 ![Telegramlogo](/docs/telegram120.png)
 
-- [Telegram](https://desktop.telegram.org/)
+- [**Telegram**](https://desktop.telegram.org/)
 
-- [AyuGram](https://github.com/AyuGram/AyuGramDesktop)
+- [**AyuGram**](https://github.com/AyuGram/AyuGramDesktop)
 
-- [MaterialGram](https://github.com/kukuruzka165/materialgram)
+- [**MaterialGram**](https://github.com/kukuruzka165/materialgram)
 
 # 🌎 Браузеры
 
 ![Browser logo](/docs/browser.png)
 
 > [!Important]
-> [Тесты приватности браузеров](https://privacytests.org/) 
+> [**Тесты приватности браузеров**](https://privacytests.org/) 
 
-- [Thorium](https://www.majorgeeks.com/files/details/thorium_browser.html)
+- [**Thorium**](https://www.majorgeeks.com/files/details/thorium_browser.html)
 
-- [Ungoogled](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
+- [**Ungoogled**](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
 
-- [Mozilla FireFox](https://www.mozilla.org/en-US/firefox/new/)
+- [**Mozilla FireFox**](https://www.mozilla.org/en-US/firefox/new/)
 
-  - [Install FireFox by valleyofdoom](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/files/install-firefox_by_amit.ps1)
+  - [***Install FireFox by valleyofdoom***](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/files/install-firefox_by_amit.ps1)
 
-  - [Firefox privacy, security and anti-tracking](https://github.com/arkenfox/user.js)
+  - [***Firefox privacy, security and anti-tracking***](https://github.com/arkenfox/user.js)
 
-- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔹 Форк FireFox
+- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔹 ***Форк FireFox***
 
 # 🕹️ Лаунчеры
 
 ![Game logo](/docs/gaming_logo.png)
 
-- [Steam](https://store.steampowered.com/about/)
+- [**Steam**](https://store.steampowered.com/about/)
 
-  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper) 
+  - [***NoSteamWebHelper***](https://github.com/Aetopia/NoSteamWebHelper) 
 
-- [EpicGames](https://store.epicgames.com/en-US/)
+- [**EpicGames**](https://store.epicgames.com/en-US/)
 
-- [Battle.Net](https://us.shop.battle.net/ru-ru)
+- [**Battle.Net**](https://us.shop.battle.net/ru-ru)
 
 # 💡 Прочее
 
