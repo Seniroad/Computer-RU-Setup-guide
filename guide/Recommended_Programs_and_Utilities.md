@@ -4,7 +4,7 @@
 
 # 🖥️ Установка Windows
 
-![win logo](docs/win.png)
+![win](docs/win.png)
 
 - [Uupdump](https://uupdump.net/)
 
