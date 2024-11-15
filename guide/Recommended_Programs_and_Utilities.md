@@ -4,7 +4,7 @@
 
 # 🖥️ Установка Windows
 
-![alt text](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/win.png)
+![win logo](docs/win.png)
 
 - [Uupdump](https://uupdump.net/)
 
