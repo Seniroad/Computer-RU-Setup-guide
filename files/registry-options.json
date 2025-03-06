@@ -38,6 +38,6 @@
     "disable suggestions in the search box and in search home": true,
     "disable computer is out of support message": true,
     "disable fault tolerant heap": true,
-	"setup mmcss and quantum on optimal value": false
+    "setup MMCSS and quantum on optimal value": false
   }
 }

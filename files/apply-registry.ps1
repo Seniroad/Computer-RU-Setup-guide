@@ -840,7 +840,7 @@ $entries = @{
 	"HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl"                                                                       = @(
 		@{
 			"key_name" = "Win32PrioritySeparation"
-			"value"    = 24
+			"value"    = 18
 			"type"     = "REG_DWORD"
 			"apply_if" = @("setup mmcss and quantum on optimal value")
 		}
