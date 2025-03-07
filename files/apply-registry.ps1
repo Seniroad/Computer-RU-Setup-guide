@@ -828,13 +828,13 @@ $entries = @{
 			"key_name" = "NetworkThrottlingIndex"
 			"value"    = 10
 			"type"     = "REG_DWORD"
-			"apply_if" = @("setup mmcss and quantum on optimal value")
+			"apply_if" = @("setup MMCSS and quantum on optimal value")
 		}
 		@{
 			"key_name" = "SystemResponsiveness"
 			"value"    = 10
 			"type"     = "REG_DWORD"
-			"apply_if" = @("setup mmcss and quantum on optimal value")
+			"apply_if" = @("setup MMCSS and quantum on optimal value")
 		}
 	)
 	"HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl"                                                                       = @(
@@ -842,7 +842,7 @@ $entries = @{
 			"key_name" = "Win32PrioritySeparation"
 			"value"    = 18
 			"type"     = "REG_DWORD"
-			"apply_if" = @("setup mmcss and quantum on optimal value")
+			"apply_if" = @("setup MMCSS and quantum on optimal value")
 		}
 	)
 }
