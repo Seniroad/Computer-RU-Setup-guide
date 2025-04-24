@@ -76,7 +76,7 @@
 
 ### Сериализация окончания таймера (SerializeTimerExpiration)
 
-**EXO** : На W11 24h2 ``SerializeTimerExpiration`` работает так:
+На W11 24h2 ``SerializeTimerExpiration`` работает так:
 
 ``SerializeTimerExpiration``=``1`` (При условии что приложение вызывает 0,5 ms):
 
