@@ -642,7 +642,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
   - См. статью [Windows Short (8.3) Filenames - A Security Nightmare? | Bogdan Calin](https://www.acunetix.com/blog/articles/windows-short-8-3-filenames-web-security-problem)
 
       ```bat
-      fsutil behavior set disable8dot3 1
+      fsutil 8dot3name set 1
       ```
 
 - Отключите обновление метки времени последнего доступа для каждого каталога, когда каталоги перечислены на томе NTFS. Отключение функции Last Access Time повышает скорость доступа к файлам и каталогам ([1](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-behavior#remarks)). Обратите внимание, что это может повлиять на программы резервного копирования и удаленного хранения данных, согласно официальным замечаниям ([1](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-behavior#remarks)).

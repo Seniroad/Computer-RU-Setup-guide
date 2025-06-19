@@ -40,7 +40,7 @@
 
 - Windows 11 является минимальным требованием для [Cross Adapter Scan-Out](https://videocardz.com/newz/microsoft-cross-adapter-scan-out-caso-delivers-16-fps-increse-on-laptops-without-dgpu-igpu-mux-switch) ([1](https://devblogs.microsoft.com/directx/optimizing-hybrid-laptop-performance-with-cross-adapter-scan-out-caso))
 
-- AllowTelemetry можно установить на 0 в редакциях Windows Server ([1](https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.DataCollection::AllowTelemetry)).
+- AllowTelemetry можно установить на 0 в редакциях Windows Server ([1](https://gpsearch.azurewebsites.net:/Default.aspx?PolicyID=10937)).
 
 - Начиная с версии Windows 10 2004 комплект драйверов Windows включает в себя модуль расширения класса сетевого адаптера ([NetAdapterCx](https://learn.microsoft.com/ru-ru/windows-hardware/drivers/netcx)). С версии Windows 11 24h2 UMDF NetAdapterCx позволяет драйверам сетевого адаптера работать в пользовательском режиме.
   
