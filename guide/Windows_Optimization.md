@@ -331,7 +331,7 @@ C:\files\disable-scheduled-tasks.ps1
 
     - Смотрите [Что такое нативное масштабирование и как его можно использовать?](https://github.com/valleyofdoom/PC-Tuning/blob/main/docs/research.md#8-what-is-identity-scaling-and-how-can-you-use-it)
 
-    - Опционально используйте [QueryDisplayScaling](https://github.com/valleyofdoom/QueryDisplayScaling), чтобы узнать текущий режим масштабирования.
+    - Используйте [QueryDisplayScaling](https://github.com/valleyofdoom/QueryDisplayScaling), чтобы узнать текущий режим масштабирования.
 
 - Попробуйте удалить все разрешения и прочий "мусор" (звуковые блоки), кроме родного разрешения в CRU. Это может быть решением проблемы ~1-секундного черного экрана при переключении альт-таба во время использования ``Hardware: Legacy Flip`` в режиме отображения
     
