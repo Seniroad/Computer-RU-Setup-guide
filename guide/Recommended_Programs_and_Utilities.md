@@ -107,6 +107,6 @@
 
 ![Other](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/other.png)
 
-- [**LLG Device Tweaker**](https://discordapp.com/channels/1184036917310918666/1371913050428276917)🔹Более удобный вариант **interrupt Affinity Policy Tool** совмещенный с **MSI Utility V3** и удобным интерфейсом.
-- [**LLG MMCSS Tweaker**](https://discordapp.com/channels/1184036917310918666/1387418460568686816) 🔹 Программа для настройки **MMCSS** со всеми подробностями и оптимизацией.
-- [**LLG Win32 Priority Separation Editor**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/Win32%20Priority%20Separation%20Editor.exe) 🔹 Более тонкая и точная настройка параметра **Win32PrioritySeparation**.
+- [**LLG Device Tweaker**](https://discordapp.com/channels/1184036917310918666/1371913050428276917)
+- [**LLG MMCSS Tweaker**](https://discordapp.com/channels/1184036917310918666/1387418460568686816) 
+- [**LLG Win32 Priority Separation Editor**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/Win32%20Priority%20Separation%20Editor.exe) 
