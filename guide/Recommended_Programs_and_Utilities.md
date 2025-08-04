@@ -107,4 +107,4 @@
 
 ![Other](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/other.png)
 
-- **Comming soon..**
+- [**LLG Device Tweaker**](https://discordapp.com/channels/1184036917310918666/1371913050428276917)🔹Более удобный вариант **interrupt Affinity Policy Tool** совмещенный с **MSI Utility V3.**
