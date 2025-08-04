@@ -106,7 +106,7 @@
 # 💡 Прочее
 
 ![Other](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/other.png)
-
+- [**HypeOS - Custom Gaming Windows**]
 - [**LLG Device Tweaker**](https://discordapp.com/channels/1184036917310918666/1371913050428276917)
 - [**LLG MMCSS Tweaker**](https://discordapp.com/channels/1184036917310918666/1387418460568686816) 
 - [**LLG Win32 Priority Separation Editor**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/Win32%20Priority%20Separation%20Editor.exe) 
