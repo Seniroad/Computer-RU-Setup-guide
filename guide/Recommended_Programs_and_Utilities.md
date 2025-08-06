@@ -111,7 +111,7 @@
   - [Microsoft Interrupt Affinity Tool](https://www.techpowerup.com/download/microsoft-interrupt-affinity-tool/)
   - [Msi Utility v3](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
 
-- [LLG MMCSS Tweaker](https://discordapp.com/channels/1184036917310918666/1387418460568686816) 
+- [**LLG MMCSS Tweaker**](https://discordapp.com/channels/1184036917310918666/1387418460568686816) 
 
   - [Больше о MMCSS](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-mmcss)
 
