@@ -28,7 +28,6 @@
 
   - [***Настройте Msi Afterburner***](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%82%D0%B5-msi-afterburner)
 
-####
 - [**Установка библиотек**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA)
 - [**Java**](https://www.java.com/download/ie_manual.jsp)
 
@@ -47,8 +46,6 @@
 > **Если вы используете клиенты, то они частично нарушают ***ToS*** Дискорда, поэтому используйте на свой страх и риск.**
 
 - [**Discord**](https://discord.com/)
-
-- [**OpenAsar**](https://openasar.dev/) 
 
 - [**Vencord**](https://vencord.dev/) 
 
@@ -69,8 +66,6 @@
 - [**Telegram**](https://desktop.telegram.org/)
 
 - [**AyuGram**](https://github.com/AyuGram/AyuGramDesktop)
-
-- [**MaterialGram**](https://github.com/kukuruzka165/materialgram)
 
 # 🌎 Браузеры
 
