@@ -104,16 +104,17 @@
 - [**HypeOS - Custom Gaming Windows**](https://discord.gg/94B8GDCs)
 - [HypeOS Debloater **BETA**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/HypeOS%20Debloater%20beta.ps1)
  
-  - [**AppxPackagesManager**](https://github.com/valleyofdoom/AppxPackagesManager)
+  - [AppxPackagesManager](https://github.com/valleyofdoom/AppxPackagesManager)
+
 - [**LLG Device Tweaker**](https://discordapp.com/channels/1184036917310918666/1371913050428276917)
 
-  - [**Microsoft Interrupt Affinity Tool**](https://www.techpowerup.com/download/microsoft-interrupt-affinity-tool/)
+  - [Microsoft Interrupt Affinity Tool](https://www.techpowerup.com/download/microsoft-interrupt-affinity-tool/)
   - [Msi Utility v3](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
 
-- [**LLG MMCSS Tweaker**](https://discordapp.com/channels/1184036917310918666/1387418460568686816) 
+- [LLG MMCSS Tweaker](https://discordapp.com/channels/1184036917310918666/1387418460568686816) 
 
-  - [**Больше о MMCSS**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-mmcss)
+  - [Больше о MMCSS](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-mmcss)
 
 - [**LLG Win32 Priority Separation Editor**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/Win32%20Priority%20Separation%20Editor.exe) 
 
-  - [**Больше о Win32Separation**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BA%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%B2)
+  - [Больше о Win32Separation](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BA%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%B2)
