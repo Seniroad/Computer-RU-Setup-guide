@@ -16,7 +16,7 @@
 
 - [**Official Nvidia Drivers**](https://www.nvidia.com/en-us/drivers/)
 
-  - [***Nvcleanstall***](https://nvcleanstall.net/)
+  - [***NVCleanstall***](https://nvcleanstall.net/)
 
 - [**AMD Drivers and Support for Processors and Graphics**](https://www.amd.com/en/support/download/drivers.html)
 
