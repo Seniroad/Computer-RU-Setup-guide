@@ -102,9 +102,8 @@
 
 ![Other](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/other.png)
 - [**HypeOS - Custom Gaming Windows**](https://discord.gg/94B8GDCs)
-- [HypeOS Debloater **BETA**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/HypeOS%20Debloater%20beta.ps1)
- 
-  - [*AppxPackagesManager*](https://github.com/valleyofdoom/AppxPackagesManager)
+
+- [**AppxPackagesManager**](https://github.com/valleyofdoom/AppxPackagesManager)
 
 - [**LLG Device Tweaker**](https://discordapp.com/channels/1184036917310918666/1371913050428276917)
 
