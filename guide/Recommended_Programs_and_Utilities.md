@@ -26,7 +26,7 @@
 - [**Snappy Driver Installer**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2)
 - [**MSI Afterburner**](https://www.msi.com/Landing/afterburner/graphics-cards)
 
-  - [***Настройте Msi Afterburner***](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%82%D0%B5-msi-afterburner)
+  - [*Настройте Msi Afterburner*](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%82%D0%B5-msi-afterburner)
 
 - [**Установка библиотек (Visual C++, DirectX)**](https://www.mediafire.com/file/pxgrwf92jqzoax9/DirectX_%2526_Visual_C%252B%252B.7z/file)
 - [**Java**](https://www.java.com/download/ie_manual.jsp)
