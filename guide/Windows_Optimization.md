@@ -4,26 +4,76 @@
 > Здесь не будет пошагового руководства, что бы настроить систему для игр. Это сборник рекомендаций и информации, для оптимизации работы операционной системы.
 
 
+## Обход OOBE
 
+- Windows Server может потребовать ввести пароль, который при желании можно убрать потом.
+
+Если вы настраиваете Windows 11, нажмите Shift+F10, чтобы открыть **cmd**, затем введите ``regedit``, чтобы открыть редактор реестра и добавить приведённую ниже запись. Это позволит продолжить установку без подключения к интернету, разблокировав пункт «Продолжить с ограниченной настройкой», как показано в видео-примерах ниже. Таким образом убирается требование входа с учётной записью Microsoft, чего я в целом крайне не рекомендую делать по соображениям конфиденциальности. После применения записи реестра введите в CMD команду ``shutdown /r /t 0`` для перезагрузки.
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE]
+"BypassNRO"=dword:00000001
+```
 
 ## Настройка после установки
 
 Настройте под себя меню пуск, ярлыки, панель задач. Настройками персонализации можно будет воспользоваться попозже.
 
-- При необходимости, установите обновления в Центре обновлений.
+- Установите обновления в Центре обновлений с драйверами (рекомендуется для ноутбуков) или займитесь этим после отключения установки драйверов.
 
 Перенесите папку ``files`` из репозитория в корень диска системы (должно получится вот так: ``C:\files``)
+
+## Настройка файловой системы 
+
+Откройте ``cmd`` от имени администратора и введите команды ниже.
+
+- Отключение создания имён файлов в формате 8.3 символа на томах, отформатированных в FAT и NTFS, что повышает производительность и безопасность ([1](https://web.archive.org/web/20200217151754/https://ttcshelbyville.wordpress.com/2018/12/02/should-you-disable-8dot3-for-performance-and-security)).
+  
+    ```bat
+    fsutil 8dot3name set 1
+    ```
+
+- Отключение обновления временной метки Last Access Time при обращении к каталогам на томе NTFS. Это повышает скорость доступа к файлам и папкам ([1](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-behavior#remarks)). Учтите, что отключение функции Last Access Time может повлиять на работу программ резервного копирования и удалённого хранения (см. официальные примечания).
+  
+    ```bat
+    fsutil behavior set disablelastaccess 1
+    ```
+
+## Контроль учётных записей (UAC)
+
+Установите параметр User Account Control (UAC) на «Всегда уведомлять» (наивысший уровень), введя в окно ``Win+R`` команду ``useraccountcontrolsettings``.
+Это снижает риск того, что вредоносная программа обойдёт UAC, что возможно при настройке по умолчанию ([1](https://devblogs.microsoft.com/oldnewthing/20160816-00/?p=94105), [2](https://github.com/hfiref0x/UACME#system-requirements)).
+
+## Неограниченная политика выполнения PowerShell
+> [!WARNING]
+> Установка политики выполнения PowerShell в режим Unrestricted может негативно сказаться на безопасности и сделать систему уязвимой. Пользователям следует оценить риски, связанные с изменением данного параметра. В качестве альтернативы можно использовать параметр -ExecutionPolicy Bypass при запуске экземпляра PowerShell, вместо изменения политики глобально.
+>
+Это необходимо для выполнения скриптов из данного репозитория. Откройте PowerShell от имени администратора и введите команду:
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+```
+
+- В случае возникновения ошибок, связанных с работой Windows Defender или контролем учётных записей (UAC), используйте параметр ``-Force``
+
+## Process Mitigations (Windows 10 1709+)
+
+> [!WARNING]
+> Отключение механизмов защиты процессов может негативно сказаться на безопасности и сделать систему уязвимой. Пользователям следует внимательно оценить риски, связанные с изменением данного параметра.
+
+В операционной системе по умолчанию включен ряд механизмов защиты ([1](https://learn.microsoft.com/en-us/powershell/module/processmitigations/set-processmitigation?view=windowsserver2019-ps#-disable)), которые могут снижать производительность. При желании их можно отключить на странице «Exploit Protection» в Windows Defender. Очевидно, что отключение этих механизмов уменьшает уровень безопасности. Этот шаг рекомендуется выполнить именно сейчас, так как в случае отключения Windows Defender на следующих этапах доступ к интерфейсу будет невозможен. Однако переключение параметров остаётся возможным через команды [Get-ProcessMitigation](https://learn.microsoft.com/en-us/powershell/module/processmitigations/get-processmitigation?view=windowsserver2022-ps) и [Set-ProcessMitigation](https://learn.microsoft.com/en-us/powershell/module/processmitigations/set-processmitigation?view=windowsserver2019-ps) в PowerShell.
+
+Следует учитывать, что некоторые программы требуют включённых механизмов защиты, и при их отключении могут перестать работать, поэтому действуйте с осторожностью.
+
+- Для отключения всех механизмов защиты используйте следующий скрипт в ``PowerShell``.
+    ``` powershell
+    C:\files\disable-process-mitigations.ps1
+    ```
 
 ## Импортирования Настроек в регистр
 
 >[!WARNING]
->  Я не утверждаю, что это идеальная настройка реестра, и что у неё нет проблем. При желании вы можете сами настроить в файле конфигурации. **Скрипт не возвращает настройки при изменении с "true" на "false".**
-
-- Это необходимо для выполнения скриптов в репозитории. Откройте PowerShell от имени администратора (не через Win+R, а через пуск) и введите приведенную ниже команду.
-
-```powershell
-Set-ExecutionPolicy Unrestricted -Force
-```
+>  Я не утверждаю, что данная настройка реестра является оптимальной или полностью лишена недостатков. При необходимости вы можете внести изменения самостоятельно через файл конфигурации. **Следует учитывать, что скрипт не выполняет возврат параметров при изменении значения с ``true`` на ``false``.**
 
 - Откройте файл конфигурации
   
@@ -36,45 +86,45 @@ C:\files\registry-options.json
 
 |Опция|Стимул|Пояснение|Значение по умолчанию
 |---|---|---|---|
-|``disable windows update``|1. Снижение нагрузки на процессор<br><br>2. Получение более тонкого контроля над рассматриваемой функцией|Отключение Windows Update входит в рекомендации Microsoft по настройке устройств для производительности в реальном времени ([1](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/soft-real-time/soft-real-time-device)). Вместо полного отключения Windows Update можно отключить автоматические обновления, что дает тот же эффект с точки зрения снижения нагрузки на процессор, но при этом позволяет обновлять Windows, установив значение ``disable windows update`` в ``false`` и ``disable automatic windows updates`` в ``true``. Известно, что процессы обновления Windows потребляют много ресурсов процессора и памяти. Отключение Windows Update нарушает работу Microsoft Store, однако вы можете загружать и устанавливать пакеты Appx напрямую ([инструкции](https://superuser.com/questions/1721755/is-there-a-way-to-install-microsoft-store-exclusive-apps-without-store))<br><br>Этот вариант не влияет на обновления, которые можно контролировать с помощью групповых политик ([инструкции](https://www.tenforums.com/tutorials/159624-how-specify-target-feature-update-version-windows-10-a.html)). Однако вы ограничены в предотвращении обновлений до тех пор, пока указанная версия не достигнет окончания срока службы|``false``|
-|``disable automatic windows updates``|1. Снижение нагрузки на процессор<br><br>2. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает автоматическую загрузку и установку обновлений Windows, вместо того чтобы полностью отключить Windows Update и время от времени проверять наличие обновлений вручную. Обновления могут происходить в неудобное время, что приводит к чрезмерному использованию процессора и памяти через случайные промежутки времени, а также к нарушению процесса выключения в некоторых случаях. Эта опция отменяется, если для параметра ``disable windows update`` установлено значение ``true``. <br><br>Этот параметр не влияет на обновления, которые можно контролировать с помощью групповых политик ([инструкции](https://www.tenforums.com/tutorials/159624-how-specify-target-feature-update-version-windows-10-a.html)). Однако вы можете предотвратить обновления только до тех пор, пока указанная версия не достигнет конца срока службы|``true``|
-|``disable driver installation via windows update``|1. Снижение нагрузки на процессор<br><br>2. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает установку устаревших, уязвимых и потенциально плохо работающих драйверов через Windows Update. Рекомендуется вручную устанавливать только минимальные версии драйверов, которые требуются вашей системе (так как полная программа установки часто устанавливает другие программы, которые постоянно работают в фоновом режиме), а также последние версии непосредственно с сайта производителя, как описано в разделе [Установка драйверов](#установка-драйверов). Эта опция отменяется, если для параметра ``disable windows update`` установлено значение ``true``.|``true``|
-|``disable automatic store app updates``|1. Снижение нагрузки на процессор<br><br>2. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает автоматическую загрузку и установку обновлений приложений магазина по сравнению с полным отключением обновлений приложений, что нежелательно с точки зрения снижения нагрузки на процессор. Вместо этого время от времени проверяйте наличие обновлений приложений вручную|``true``|
-|``disable windows defender``|1. Снижение нагрузки на процессор<br><br>2. Предотвращает проблемы с переходом процессора в состояние C-State 0 ([1](https://www.techpowerup.com/295877/windows-defender-can-significantly-impact-intel-cpu-performance-we-have-the-fix))|Эта опция полностью отключает Защитник Windows. Вместо этого часто запускайте сканирование системы, используйте защищенный браузер с [uBlock Origin](https://ublockorigin.com), держите UAC включенным и отдавайте предпочтение бесплатному, открытому исходному коду и надежному программному обеспечению. Держитесь подальше от проприетарного программного обеспечения, где это возможно, и проверяйте файлы и исполняемые файлы с помощью [VirusTotal](https://www.virustotal.com/gui/home/upload) перед их открытием.|``true``|
-|``disable gamebarpresencewriter``|1. Снижение нагрузки на процессор|Процесс постоянно работает в фоновом режиме и, по моим данным, не требуется для работы игрового режима или игровой панели.|``true``|
-|``disable background apps``|1. Снижение нагрузки на процессор|Запрещает приложениям работать в фоновом режиме. Фоновые приложения отключаются с помощью политик с этой опцией, поскольку в интерфейсе Windows 11 эта опция недоступна.|``true``|
-|``disable transparency effects``|1. Снижение нагрузки на процессор ([1](/assets/images/transparency-effects-benchmark.png))|Отключение эффектов прозрачности|``true``|
-|``disable notifications network usage``|1. Смягчение телеметрии ([1](https://learn.microsoft.com/en-gb/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#10-live-tiles))|N/A|``true``|
-|``disable windows marking file attachments with information about their zone of origin``|1. Уменьшение или отключение навязчивых элементов|Предотвращает [это](https://www.tenforums.com/tutorials/85418-how-disable-downloaded-files-being-blocked-windows.html) навязчивые предупреждения безопасности, поскольку загруженные файлы постоянно требуют разблокировки, однако это может негативно сказаться на безопасности, поскольку пользователь не будет уведомлен о заблокированных файлах с помощью предупреждения безопасности ([1](https://www.tenforums.com/tutorials/85418-how-disable-downloaded-files-being-blocked-windows.html)).|``true``|
-|``disable malicious software removal tool updates``|1. Получение более тонкого контроля над рассматриваемой функцией|Предотвращение предложения Windows средства удаления вредоносных программ через Windows Update|``true``|
-|``disable sticky keys``|1. Уменьшение или отключение навязчивых элементов|Отключает отображение сообщения "Хотите включить залипание клавиши?" при нажатии горячей клавиши определенное количество раз. Это очень навязчиво в приложениях, использующих клавишу ``Shift'' для управления, например в играх.|``true``|
-|``disable pointer acceleration``|1. Уменьшение или отключение навязчивых элементов|Обеспечивает отклик мыши один к одному в играх, которые не подписываются на необработанные события ввода, и на Рабочем столе|``true``|
-|``disable fast startup``|1. Уменьшение или отключение навязчивых элементов|Вмешивается в процесс выключения в том смысле, что система не переходит в S5, что может привести к неожиданным проблемам ([объяснение](https://www.youtube.com/watch?v=OBGxt8zhbRk)). Соответствующую информацию см. в разделе [Быстрый запуск, переход в ждущий режим и гибернация](#Быстрый-запуск,-переход-в-ждущий-режим-и-гибернация). Можно завершить работу без отключения быстрого запуска, удерживая ``Shift`` при нажатии ``Выключить`` в меню Пуск. Однако недостатком этого способа является то, что вы можете забыть удерживать клавишу ``Shift``.|``true``|
-|``disable customer experience improvement program``|1. Смягчение телеметрии ([1](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj618322(v=ws.11)))|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable windows error reporting``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable clipboard history``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``false``|
-|``disable activity feed``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable advertising id``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable windows update``|1. Уменьшение потребления в фоне<br><br>2. Получение ручного контроля над данной функцией Windows|Отключение Windows Update входит в рекомендации Microsoft по настройке устройств для производительности в реальном времени ([1](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/soft-real-time/soft-real-time-device)). Вместо полного отключения Windows Update можно отключить автоматические обновления, что дает тот же эффект с точки зрения снижения нагрузки на процессор, но при этом позволяет обновлять Windows, установив значение ``disable windows update`` в ``false`` и ``disable automatic windows updates`` в ``true``. Известно, что процессы обновления Windows потребляют много ресурсов процессора и памяти. Отключение Windows Update нарушает работу Microsoft Store, однако вы можете загружать и устанавливать пакеты Appx напрямую ([инструкции](https://superuser.com/questions/1721755/is-there-a-way-to-install-microsoft-store-exclusive-apps-without-store))<br><br>Этот вариант не влияет на обновления, которые можно контролировать с помощью групповых политик ([инструкции](https://www.tenforums.com/tutorials/159624-how-specify-target-feature-update-version-windows-10-a.html)). Однако вы ограничены в предотвращении обновлений до тех пор, пока указанная версия не достигнет окончания срока службы|``false``|
+|``disable automatic windows updates``|1. Уменьшение потребления в фоне<br><br>2. Получение ручного контроля над данной функцией Windows|Предотвращает автоматическую загрузку и установку обновлений Windows, вместо того чтобы полностью отключить Windows Update и время от времени проверять наличие обновлений вручную. Обновления могут происходить в неудобное время, что приводит к чрезмерному использованию процессора и памяти через случайные промежутки времени, а также к нарушению процесса выключения в некоторых случаях. Эта опция отменяется, если для параметра ``disable windows update`` установлено значение ``true``. <br><br>Этот параметр не влияет на обновления, которые можно контролировать с помощью групповых политик ([инструкции](https://www.tenforums.com/tutorials/159624-how-specify-target-feature-update-version-windows-10-a.html)). Однако вы можете предотвратить обновления только до тех пор, пока указанная версия не достигнет конца срока службы|``true``|
+|``disable driver installation via windows update``|1. Уменьшение потребления в фоне<br><br>2. Получение ручного контроля над данной функцией Windows|Предотвращает установку устаревших, уязвимых и потенциально плохо работающих драйверов через Windows Update. Рекомендуется вручную устанавливать только минимальные версии драйверов, которые требуются вашей системе (так как полная программа установки часто устанавливает другие программы, которые постоянно работают в фоновом режиме), а также последние версии непосредственно с сайта производителя, как описано в разделе [Установка драйверов](#установка-драйверов). Эта опция отменяется, если для параметра ``disable windows update`` установлено значение ``true``.|``true``|
+|``disable automatic store app updates``|1. Уменьшение потребления в фоне<br><br>2. Получение ручного контроля над данной функцией Windows|Предотвращает автоматическую загрузку и установку обновлений приложений магазина по сравнению с полным отключением обновлений приложений, что нежелательно с точки зрения снижения нагрузки на процессор. Вместо этого время от времени проверяйте наличие обновлений приложений вручную|``true``|
+|``disable windows defender``|1. Уменьшение потребления в фоне<br><br>2. Предотвращает проблемы с переходом процессора в состояние C-State 0 ([1](https://www.techpowerup.com/295877/windows-defender-can-significantly-impact-intel-cpu-performance-we-have-the-fix))|Эта опция полностью отключает Защитник Windows. Вместо этого часто запускайте сканирование системы, используйте защищенный браузер с [uBlock Origin](https://ublockorigin.com), держите UAC включенным и отдавайте предпочтение бесплатному, открытому исходному коду и надежному программному обеспечению. Держитесь подальше от проприетарного программного обеспечения, где это возможно, и проверяйте файлы и исполняемые файлы с помощью [VirusTotal](https://www.virustotal.com/gui/home/upload) перед их открытием.|``true``|
+|``disable gamebarpresencewriter``|1. Уменьшение потребления в фоне|Процесс постоянно работает в фоновом режиме и, по моим данным, не требуется для работы игрового режима или игровой панели.|``true``|
+|``disable background apps``|1. Уменьшение потребления в фоне|Запрещает приложениям работать в фоновом режиме. Фоновые приложения отключаются с помощью политик с этой опцией, поскольку в интерфейсе Windows 11 эта опция недоступна.|``true``|
+|``disable transparency effects``|1. Уменьшение потребления в фоне ([1](/assets/images/transparency-effects-benchmark.png))|Отключение эффектов прозрачности|``true``|
+|``disable notifications network usage``|1. Отключение телеметрии ([1](https://learn.microsoft.com/en-gb/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#10-live-tiles))|N/A|``true``|
+|``disable windows marking file attachments with information about their zone of origin``|1. Отключение навязчивых элементов|Предотвращает [это](https://www.tenforums.com/tutorials/85418-how-disable-downloaded-files-being-blocked-windows.html) навязчивые предупреждения безопасности, поскольку загруженные файлы постоянно требуют разблокировки, однако это может негативно сказаться на безопасности, поскольку пользователь не будет уведомлен о заблокированных файлах с помощью предупреждения безопасности ([1](https://www.tenforums.com/tutorials/85418-how-disable-downloaded-files-being-blocked-windows.html)).|``true``|
+|``disable malicious software removal tool updates``|1. Получение ручного контроля над данной функцией Windows|Предотвращение предложения Windows средства удаления вредоносных программ через Windows Update|``true``|
+|``disable sticky keys``|1. Отключение навязчивых элементов|Отключает отображение сообщения "Хотите включить залипание клавиши?" при нажатии горячей клавиши определенное количество раз. Это очень навязчиво в приложениях, использующих клавишу ``Shift'' для управления, например в играх.|``true``|
+|``disable pointer acceleration``|1. Отключение навязчивых элементов|Обеспечивает отклик мыши один к одному в играх, которые не подписываются на необработанные события ввода, и на Рабочем столе|``true``|
+|``disable fast startup``|1. Отключение навязчивых элементов|Вмешивается в процесс выключения в том смысле, что система не переходит в S5, что может привести к неожиданным проблемам ([объяснение](https://www.youtube.com/watch?v=OBGxt8zhbRk)). Соответствующую информацию см. в разделе [Быстрый запуск, переход в ждущий режим и гибернация](#Быстрый-запуск,-переход-в-ждущий-режим-и-гибернация). Можно завершить работу без отключения быстрого запуска, удерживая ``Shift`` при нажатии ``Выключить`` в меню Пуск. Однако недостатком этого способа является то, что вы можете забыть удерживать клавишу ``Shift``.|``true``|
+|``disable customer experience improvement program``|1. Отключение телеметрии ([1](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj618322(v=ws.11)))|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable windows error reporting``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable clipboard history``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``false``|
+|``disable activity feed``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable advertising id``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
 |``disable autoplay``|1. Снижение риска безопасности|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable cloud content``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable account-based explorer features``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable mdm enrollment``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable cloud content``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable account-based explorer features``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable mdm enrollment``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
 |``disable microsoft store push to install feature``|1. Снижение риска безопасности|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``mitigate web-based search info``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable sending inking and typing data to microsoft``|1. Смягчение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
-|``disable automatic maintenance``|1. Получение более тонкого контроля над рассматриваемой функцией|N/A|``true``|
-|``disable program compatibility assistant``|1. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает анонимное применение изменений Windows после запуска средств устранения неполадок|``true``|
+|``mitigate web-based search info``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable sending inking and typing data to microsoft``|1. Отключение телеметрии|Рекомендовано [privacyguides.org](https://www.privacyguides.org/en/os/windows/group-policies)|``true``|
+|``disable automatic maintenance``|1. Получение ручного контроля над данной функцией Windows|N/A|``true``|
+|``disable program compatibility assistant``|1. Получение ручного контроля над данной функцией Windows|Предотвращает анонимное применение изменений Windows после запуска средств устранения неполадок|``true``|
 |``disable remote assistance``|1. Снижение риска безопасности|N/A|``true``|
 |``disable sign-in and lock last interactive user after a restart``|1. Снижение риска безопасности ([1](https://www.stigviewer.com/stig/windows_server_2012_2012_r2_member_server/2014-06-30/finding/V-43245))|N/A|``true``|
 |``show file extensions``|1. Снижение риска безопасности ([1](https://www.youtube.com/watch?v=nYdS3FIu3rI))|N/A |``true``|
 |``disable widgets``|1. Снижение риска безопасности ([1](https://www.youtube.com/watch?v=m9d-fXl3Z8k))|N/A|``true``|
-|``disable telemetry``|1. Смягчение телеметрии|N/A|``true``|
-|``disable retrieval of online tips and help in the immersive control panel``|1. Смягчение телеметрии|N/A|``true``|
-|``disable typing insights``|1. Смягчение телеметрии|N/A|``true``|
-|``disable suggestions in the search box and in search home``|1. Смягчение телеметрии<br><br>2. Уменьшение или отключение навязчивых функций|N/A|``true``|
-|``disable computer is out of support message``|1. Уменьшение или отключение навязчивых элементов|Отключает [это](https://support.microsoft.com/en-us/topic/you-received-a-notification-your-windows-7-pc-is-out-of-support-3278599f-9613-5cc1-e0ee-4f81f623adcf) навязчивое сообщение. Не актуально для пользователей с современной версией Windows|``true``|
-|``disable fault tolerant heap``|1. Получение более тонкого контроля над рассматриваемой функцией|Предотвращает автономное применение Windows средств защиты для предотвращения будущих сбоев на основе каждого приложения ([1](https://learn.microsoft.com/en-us/windows/win32/win7appqual/fault-tolerant-heap)), что может привести к проблемам ([1](https://www.mak.com/mak-one/support/help/knowledge/performance-issues-caused-by-the-fault-tolerant-heap-windows)).|``true``|
-|``setup mmcss and quantum on optimal value``|1. Выставление оптимальных параметров<br><br>2. Снижение нагрузки на процессор|Применяет оптимальные значения для удобства|``false``|
+|``disable telemetry``|1. Отключение телеметрии|N/A|``true``|
+|``disable retrieval of online tips and help in the immersive control panel``|1. Отключение телеметрии|N/A|``true``|
+|``disable typing insights``|1. Отключение телеметрии|N/A|``true``|
+|``disable suggestions in the search box and in search home``|1. Отключение телеметрии<br><br>2. Уменьшение или отключение навязчивых функций|N/A|``true``|
+|``disable computer is out of support message``|1. Отключение навязчивых элементов|Отключает [это](https://support.microsoft.com/en-us/topic/you-received-a-notification-your-windows-7-pc-is-out-of-support-3278599f-9613-5cc1-e0ee-4f81f623adcf) навязчивое сообщение. Не актуально для пользователей с современной версией Windows|``true``|
+|``disable fault tolerant heap``|1. Получение ручного контроля над данной функцией Windows|Предотвращает автономное применение Windows средств защиты для предотвращения будущих сбоев на основе каждого приложения ([1](https://learn.microsoft.com/en-us/windows/win32/win7appqual/fault-tolerant-heap)), что может привести к проблемам ([1](https://www.mak.com/mak-one/support/help/knowledge/performance-issues-caused-by-the-fault-tolerant-heap-windows)).|``true``|
+|``setup mmcss and quantum on optimal value``|1. Выставление оптимальных параметров<br><br>1. Уменьшение потребления в фоне|Применяет оптимальные значения для удобства|``false``|
 
 - Откройте PowerShell от администратора (не через Win+R, и ручками тоже не получится запустить) и введите
 
@@ -104,31 +154,47 @@ C:\files\registry-options.json
 Рекомендуется обновить и установить следующее: 
 
 - Драйвер на Сетевой адаптер
-  >Если на этом этапе у вас нет доступа к интернету, вам придется загрузить драйвер сетевой карты с другого устройства или выполнить двойную загрузку, поскольку в некоторых версиях Windows они могут быть вообще не установлены.
+  >Если на этом этапе у вас нет доступа к интернету, вам придется загрузить драйвер сетевой карты с другого устройства или выполнить загрузку в другую систему, поскольку в некоторых версиях Windows они могут быть вообще не установлены.
 
     - Другие необходимые драйверы можно установить с официальных сайтов или с помощью [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org).
+    >[!WARNING]
+    >Смотрите внимательно, какие драйвера устанавливаете.
 
 Настройка драйвера видеокарты описана в отдельном разделе.
 
+## Настройка политик для Windows Server
+
+- В диспетчере сервера перейдите в раздел ``Управление`` -> ``Свойства диспетчера сервера`` и включите опцию, запрещающую автоматический запуск диспетчера сервера
+
+- Установите тип запуска служб ``Windows Audio`` и ``Windows Audio Endpoint Builder`` на автоматический, набрав ``services.msc`` в ``Win+R``.
+
+- Перейдите в раздел ``Конфигурация компьютера`` -> ``Параметры Windows`` -> ``Параметры безопасности`` -> ``Политики учетных записей`` -> ``Политика паролей``, набрав ``gpedit.msc`` в ``Win+R`` и отключите ``Пароль должен соответствовать требованиям сложности``
+
+- Откройте cmd и введите ``gpupdate /force``, чтобы немедленно применить изменения
+
+- Перейдите в раздел ``Конфигурация компьютера`` -> ``Административные шаблоны`` -> ``Система``, набрав ``gpedit.msc`` в ``Win+R`` и отключите ``Display Shutdown Event Tracker``, чтобы отключить приглашение к выключению.
+
+- Чтобы удалить пароль пользователя, введите свой текущий пароль и оставьте поля для ввода нового/подтверждения пароля пустыми в разделе ``Учетные записи пользователей``, набрав ``control userpasswords`` в ``Win+R``.
 
 ## Промежуточная настройка некоторых моментов
 
 - Активируйте Windows используя ключ.
 
   - Или при помощи данного скрипта в ``powershell``:
-```powershell
-irm https://massgrave.dev/get | iex
-```
+  
+    ```powershell
+    irm https://get.activated.win | iex
+    ```
 
-
-- Настройте под себя используя  ``intl.cpl`` и ``timedate.cpl`` в ``Win+R``
+- Настройте под себя время и дату используя  ``intl.cpl`` и ``timedate.cpl`` в ``Win+R``
 
 - Настройте раздел ``Time & Language``, который можно вызвать при помощи комбинации ``Win+I``
+
+    - Установите необходимый языковой пакет, если у вас его нет
 
 - Установите браузер. 
 
   - Firefox с настройкой от амита: ``C:\files\install-firefox_by_amit.ps1``
-
 
 - Установите проигрыватель, например [VLC](https://www.videolan.org)
 
@@ -174,8 +240,6 @@ bcdedit /set {current} description OS_NAME
 label C: OS_NAME
 ```
 
-
-
 - Настройте следующее, набрав ``sysdm.cpl`` в ``Win+R``:
 
 > [!IMPORTANT]
@@ -187,19 +251,6 @@ label C: OS_NAME
 
 - Отключите все ненужные разрешения в разделе ``Приватность``, нажав ``Win+I``.
 
-## Настройка политик для Windows Server
-
-- В диспетчере сервера перейдите в раздел ``Управление`` -> ``Свойства диспетчера сервера`` и включите опцию, запрещающую автоматический запуск диспетчера сервера
-
-- Установите тип запуска служб ``Windows Audio`` и ``Windows Audio Endpoint Builder`` на автоматический, набрав ``services.msc`` в ``Win+R``.
-
-- Перейдите в раздел ``Конфигурация компьютера`` -> ``Параметры Windows`` -> ``Параметры безопасности`` -> ``Политики учетных записей`` -> ``Политика паролей``, набрав ``gpedit.msc`` в ``Win+R`` и отключите ``Пароль должен соответствовать требованиям сложности``
-
-- Откройте cmd и введите ``gpupdate /force``, чтобы немедленно применить изменения
-
-- Перейдите в раздел ``Конфигурация компьютера`` -> ``Административные шаблоны`` -> ``Система``, набрав ``gpedit.msc`` в ``Win+R`` и отключите ``Display Shutdown Event Tracker``, чтобы отключить приглашение к выключению.
-
-- Чтобы удалить пароль пользователя, введите свой текущий пароль и оставьте поля для ввода нового/подтверждения пароля пустыми в разделе ``Учетные записи пользователей``, набрав ``control userpasswords`` в ``Win+R``.
 
 ## Индексирование поиска
 
@@ -208,6 +259,8 @@ label C: OS_NAME
   ```bat
   reg add "HKLM\SYSTEM\CurrentControlSet\Services\WSearch" /v "Start" /t REG_DWORD /d "4" /f
   ```
+
+- [Исследование о службах и их потреблении](/guide/Explorations.md)
 
 ## Удаление неиспользуемого ПО
 - Откройте [AppxPackagesManager](https://github.com/valleyofdoom/AppxPackagesManager), затем удалите все, что вам не нужно (а это может быть всё). Обычно можно оставить установленные пакеты, если они не работают в фоновом режиме.
@@ -513,15 +566,6 @@ powercfg /h off
 
     - Включите колонку ``VirusTotal``.
 
-## Отключение защиты процессов
-
-
-- Откройте CMD и введите приведенную ниже команду, чтобы отключить [process mitigations](https://docs.microsoft.com/en-us/powershell/module/processmitigations/set-processmitigation?view=windowsserver2019-ps). Эффекты можно посмотреть с помощью ``Get-ProcessMitigation -System`` в PowerShell.
-
-    ```bat
-    C:\files\disable-process-mitigations.bat
-    ```
-
 ## Настройка параметров управления памятью
 
 - Если в системе нет жесткого диска, то Superfetch/Prefetch можно отключить командой, приведенной ниже. Отключение SysMain указано в рекомендациях Microsoft по настройке устройств для производительности в реальном времени ([1](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/soft-real-time/soft-real-time-device)).
@@ -545,6 +589,8 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
     ```powershell
     Disable-MMAgent -MemoryCompression
     ```
+
+- [Исследование о службах и их потреблении](/guide/Explorations.md)
 
 ## Настройка сетевого адаптера
 
@@ -590,6 +636,9 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
     - Отключите улучшение звука, так как оно расходует ресурсы ([1](/docs/audio%20enhancements-benchmark.png))
 
     - По желанию установите на вкладке коммуникаций опцию ``Не делать ничего``, чтобы предотвратить автоматическую настройку уровней звука между источниками звука, поскольку это раздражает большинство пользователей ([1](https://multimedia.easeus.com/ai-article/windows-audio-ducking.html), [2](https://superuser.com/questions/1147371/how-can-i-disable-automatic-windows-7-8-10-audio-ducking)).
+
+    - Минимизируйте размер аудиобуфера с помощью параметра [LowAudioLatency](https://github.com/spddl/LowAudioLatency) или на уровне вашего ЦАП ([1](https://www.youtube.com/watch?v=JTuZvRF-OgE&t=464s)).
+    Имейте в виду, что при высокой нагрузке на процессор возможны обрывы звука, если система не будет успевать обрабатывать данные (компенсируется правильным выставлением прерываний).
 
 ## Настройте Диспетчер устройств
 
@@ -643,26 +692,6 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
     for %a in ("SleepStudy" "Kernel-Processor-Power" "UserModePowerService") do (wevtutil sl Microsoft-Windows-%~a/Diagnostic /e:false)
     ```
 
-## Настройка Файловой системы
-
-Откройте CMD от имени администратора и введите приведенные ниже команды.
-
-- Отключите создание имен файлов длиной 8,3 символа на томах, отформатированных в FAT и NTFS
-
-  - См. раздел [Следует ли отключить 8dot3 для повышения производительности и безопасности? | TCAT Shelbyville](https://web.archive.org/web/20200217151754/https://ttcshelbyville.wordpress.com/2018/12/02/should-you-disable-8dot3-for-performance-and-security)
-
-  - См. статью [Windows Short (8.3) Filenames - A Security Nightmare? | Bogdan Calin](https://www.acunetix.com/blog/articles/windows-short-8-3-filenames-web-security-problem)
-
-      ```bat
-      fsutil 8dot3name set 1
-      ```
-
-- Отключите обновление метки времени последнего доступа для каждого каталога, когда каталоги перечислены на томе NTFS. Отключение функции Last Access Time повышает скорость доступа к файлам и каталогам ([1](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-behavior#remarks)). Обратите внимание, что это может повлиять на программы резервного копирования и удаленного хранения данных, согласно официальным замечаниям ([1](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-behavior#remarks)).
-
-    ```bat
-    fsutil behavior set disablelastaccess 1
-    ```
-
 ## Прерывания с сигналом сообщения (Message signaled interrupts (MSI))
 
 Прерывания с сигналом сообщения (MSI) быстрее, чем традиционные прерывания на основе линий, и могут также решить проблему общих прерываний, которые часто являются причиной высокой задержки и стабильности прерываний ([1](https://repo.zenk-security.com/Linux%20et%20systemes%20d.exploitations/Windows%20Internals%20Part%201_6th%20Edition.pdf)).
@@ -674,6 +703,8 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
 
     - Чтобы проверить, использует ли устройство MSI, перезагрузите компьютер и проверьте, имеет ли данное устройство отрицательный IRQ в MSI Utility.
 
+    - Оставьте параметр Msi Limit пустым, чтобы система автоматически определила необходимое значение.
+  
 ## XHCI Модерация прерываний (IMOD)
 
 В большинстве систем Windows 7 используется интервал IMOD в 1 мс, в то время как в последних версиях Windows используется 0,05 мс (50us), если это не указано в установленном драйвере USB. Это означает, что после генерирования прерывания контроллер XHCI ждет (буферный период) в течение указанного интервала времени, чтобы получить больше данных, прежде чем генерировать новое прерывание, что снижает загрузку процессора, но потенциально приводит к тому, что данные с данного устройства поступают с непостоянной скоростью в случае ожидания данных от других устройств в пределах буферного периода, подключенных к тому же контроллеру XHCI.
@@ -715,12 +746,14 @@ Windows 11 и выше ограничивает частоту сообщени�
 
 - Установите частоту кадров кратной частоте обновления монитора ([калькулятор](https://boringboredom.github.io/tools/fpscapcalculator)), чтобы предотвратить несовпадение кадров и разрывов ([1](https://www.youtube.com/watch?v=_73gFgNrYVQ), [2](https://github.com/BoringBoredom/PC-Optimization-Hub/blob/main/content/peripherals/mistiming/mistiming.md)). Уменьшение частоты обновления во избежание несовпадения кадров также применимо ([инструкции](https://forums.blurbusters.com/viewtopic.php?t=8946)).
 
->Убедитесь, что GPU используется не полностью, так как снижение загрузки GPU уменьшает системную задержку ([1](https://www.youtube.com/watch?v=8ZRuFaFZh5M&t=859s), [2](https://www.youtube.com/watch?v=7CKnJ5ujL_Q)).
+- Убедитесь, что GPU используется не полностью, так как снижение загрузки GPU уменьшает системную задержку ([1](https://www.youtube.com/watch?v=8ZRuFaFZh5M&t=859s), [2](https://www.youtube.com/watch?v=7CKnJ5ujL_Q)).
 
 >[!IMPORTANT]
-> Это неверная информация. Нагрузка на GPU не влияет на скорость обработки кадра. Чем больше у вас кадров, тем меньше у вас задержка (GPU latency). 
+> Влияние сильно преувеличено. Неограниченная частота кадров обеспечивает лучшие результаты, чем ограниченная.
 
 - Ограничение частоты кадров с помощью [RTSS](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html) вместо внутриигрового ограничителя обеспечит стабильную частоту кадров и более плавное воспроизведение, поскольку в этом случае используется функция busy-wait, которая обеспечивает более высокую точность, чем 100% пассивное ожидание, но ценой заметно более высокой задержки и потенциально большей нагрузки на процессор ([1](https://www.youtube.com/watch?t=377&v=T2ENf9cigSk), [2](https://en.wikipedia.org/wiki/Busy_waiting)). Отключение параметра ``Включить службу выделенного сервера кодирования`` предотвращает запуск ``EncoderServer.exe``.
+
+    - Если игра поддерживает, то используйте механизм лимитера NVIDIA Reflex
 
 ### Режимы масштабирования
 
@@ -775,7 +808,9 @@ Windows по умолчанию планирует прерывания и DPC �
 
 ### XHCI(USB контроллер) и аудиоконтроллер
 
-Модули, связанные с XHCI и аудиоконтроллером, генерируют значительное количество прерываний при взаимодействии с соответствующим устройством. Изолирование соответствующих модулей в малоиспользуемом ядре позволяет уменьшить количество прерываний.
+Модули, связанные с XHCI и аудиоконтроллером, генерируют значительное количество прерываний при взаимодействии с соответствующим устройством. Изолирование соответствующих модулей в малоиспользуемом ядре позволяет уменьшить влияние прерываний.
+
+- Разделение контроллеров при наличии достаточного количества ядер снижает нагрузку на отдельное ядро.
 
 ### Сетевая карта
 ***Справочная информация:***
@@ -802,25 +837,31 @@ Windows по умолчанию планирует прерывания и DPC �
 - Так как драйвера интернета не создают большое количество DPC, выгоднее поставить его на 1 ядро, чем раскидывать их на 2. 
 
 - Для ``NDIS`` поставьте ``RssBaseProcNumber`` на необходимое ядро.
-  - Аффинити не работают для NDIS.
-  
+    - Аффинити не работают для NDIS.
+
+    > [!WARNING]
+    > Некоторые сетевые адаптеры не поддерживают подобную настройку, и DPC остаётся на ядре 0, даже если параметр ``RssBaseProcNumber`` установлен на другое ядро и прерывания выполняются на нём. Рекомендуется оставить настройки этого адаптера по умолчанию или воспользоваться решением от [таймкарда](https://github.com/djdallmann/GamingPCSetup/blob/master/CONTENT/RESEARCH/NETWORK/README.md#q-my-onboard-network-adapter-i225-v-supports-rss-msi-and-msi-x-but-why-is-my-indirection-table-missing-that-gives-proper-support-for-rss-in-microsoft-windows).
+
 - Для ``NetAdapterCx`` поставьте аффинити на необходимое ядро.
 
 - Отключите Interrupt Moderation. 
 
 ### Видеокарта
 
-Прерывания у графичесвкого процессора, также как у SATA или NVME контролеров выполняются параллельно. Это затрудняет их работу, когда они выполняются на одном ядре. 
+Прерывания графического процессора, также как контроллеров SATA и NVMe выполняются параллельно. Это может затруднять их работу, если они обрабатываются на одном ядре. 
 
-- Для того, чтобы установить GPU на несколько ядер, проверьте при помощи [SCEWIN]() что у вас в **Interrupt Redirection Mode Selection** выставлено ``Round robin``.
+- Чтобы распределить DPC/ISR GPU на несколько ядер, убедитесь с помощью **SCEWIN**, что в параметре **Interrupt Redirection Mode Selection** установлено значение ``Round robin``.
   
-- Выставьте в политике прерываний не одно ядро, а два ядра (помните, что на 0 ядре выполняется больше всего операций).
+- В настройках политики прерываний назначьте не одно, а два ядра (учитывая, что на ядре 0 выполняется наибольшее количество операций).
 
->[!WARNING]
->Если вы используете HT(SMT), то не ставьте прерывания на разные ядра, так как при HT данный способ не работает и вся обработка уйдет на 0 ядро (0 поток). В данном случае лучше поставить прерывания на два потока одного ядра, чтобы не вызвать прерываний DPC/ISR ради другого нового DPC/ISR (Это причина, по которой падает производительность когда аффинити видеокарты установленно на одном потоке).
+> [!IMPORTANT]
+> Почему падает производительность при назначении прерываний на одно ядро? При назначении прерываний на одно ядро производительность и должна снижаться. Анализ работы DPC/ISR в MXA показывает, что прерывания могут «прерывать сами себя», чтобы передавать ресурсы (данные) в реальном времени. Причины этого явления: DPC/ISR не имеют прямого доступа к памяти, поэтому не знают, выполняются ли другие задачи на данном ядре, медленное выполнение DPC также способствует возникновению конфликтов и снижению производительности.
+
+> [!WARNING]
+> Если используется HT (SMT), не распределяйте прерывания на разные логические ядра, так как при включённом HT вся обработка будет выполняться на логическом ядре 0 (физическое ядро содержит два логических ядра). В этом случае НЕ рекомендуется назначать прерывания на два логических ядра одного физического ядра, чтобы избежать лишних переключений контекста и не снижать производительность.
 
 >[!IMPORTANT]
-> Если вы все же вынуждены использовать HT(SMT), изза нехватки кол-ва ядер, то для вас будет полезным провести тесты с разными вариантами аффинити. Например, поставьте аудио и юсб контроллер, в котором нету вашей мышки или клавиатуры (на нем должен быть установлен высокий инттервал в [IMOD](#xhci-модерация-прерываний-imod)) на одно ядро, так как они создают небольшое кол-во прерываний, чтобы освободить еще одно ядро для более важного аффинити. Результат такой перестановки будет зависеть от вашей конфигурации компьютера.
+> Если вы вынуждены использовать HT (SMT) из-за ограниченного количества ядер, рекомендуется провести тесты с разными вариантами аффинити. Например, назначьте аудио и/или USB-контроллеры, на которых не подключены мышь или клавиатура (для таких контроллеров следует установить высокий интервал в [IMOD](#xhci-модерация-прерываний-imod)), на одно ядро. Эти устройства создают небольшое количество прерываний, что позволяет освободить другое ядро для более важных задач. Эффективность такой конфигурации будет зависеть от конкретной аппаратной конфигурации вашего компьютера.
 
 ## Планирование в пользовательском режиме (процессы, потоки)
 
