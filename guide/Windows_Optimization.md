@@ -664,6 +664,9 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
 
 ## Настройте Диспетчер устройств
 
+>[!IMPORTANT]
+> Отключение ненужных устройств не оказывает никакого влияния.
+
 - Откройте Диспетчер устройств, набрав ``devmgmt.msc`` в ``Win+R``.
 
     - Перейдите в раздел ``Вид -> Устройства по типу``.
@@ -675,9 +678,6 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
       - Отключите все контроллеры PCIe, SATA, NVMe и XHCI, а также USB-концентраторы, к которым ничего не подключено.
 
       - Отключите все устройства, не являющиеся GPU, на том же порту PCIe, что и GPU, если они вам не нужны.
-
->[!IMPORTANT]
-> Отключение ненужных устройств не оказывает никакого влияния.
 
 - По желанию используйте [DeviceCleanup](https://www.uwe-sieber.de/files/DeviceCleanup.zip) для удаления данных о удаленных/отключенных устройствах.
 
