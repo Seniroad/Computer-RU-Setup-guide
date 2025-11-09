@@ -1,28 +1,19 @@
-# Настройка Компьютера и системы Windows
+# Руководство по настройке Windows
+
+>[!CAUTION]
+>**Это не гайд, это просто сборник известных (мне на момент последнего коммита) рабочих настроек, файлов, разборов двордов, документаций и т.д.**
 
 
-## О гайде
+## ВАЖНО
 
-Этот гайд рассчитан на продвинутых пользователей и не предназначен для простого копирования
-и использования информации в целях "применить и все будет хорошо".
-**Большая часть гайда это перевод PC-Tuning для ру комьюнити.**
-
-## Гайд основан на исследованиях данных энтузиастов
-- **Seniro (Создатель, дискорд: .seniro, [LLG](https://discord.gg/4b2SKrYZee))**
-- **[div5064](https://discord.gg/4b2SKrYZee)**
-- **[EXO](https://discord.gg/4b2SKrYZee)**
-- **BEYOND PERFORMANCE ([LLG](https://discord.gg/4b2SKrYZee), [есть собственный сервер](https://discord.gg/xk3HKVPyef))**
-- **[Amitxv(valleyofdoom) (Основа данного руководства)](https://github.com/valleyofdoom/PC-Tuning)**
-- **[Timecard](https://github.com/djdallmann/GamingPCSetup)**
-- **[Calypto](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit)**
-- **[Boring Boredom](https://github.com/BoringBoredom/PC-Optimization-Hub)**
+ Если вы хотите задать вопрос, поделиться своими исследованиями или добавить разборы других авторов — вы можете сделать это в моём Discord ([ссылка]()). Поскольку я не могу заниматься исследованиями круглосуточно, обновления гайда будут двух типов: разовые — при появлении новой информации, и мелкие коммиты — для правок табуляции и прочих мелких исправлений.
 
 ## Бенчмаркинг
 - **[FrameView](https://www.nvidia.com/en-gb/geforce/technologies/frameview)** - Слишком нагруженное приложение. Если хотите - используйте. Я не советую использовать её.
 
 - **[PresentMon](https://github.com/GameTechDev/PresentMon)** - Большое количество метрики и хорошие показатели. Для визуализации используйте **[Frame Time Analysis](https://boringboredom.github.io/Frame-Time-Analysis/)**. Полный список параметров запуска для PresentMon **[здесь](https://github.com/GameTechDev/PresentMon/blob/main/README-CaptureApplication.md#metric-definitions)**.
 
-- **[Windows Performance Toolkit](https://learn.microsoft.com/en-us/windows-hardware/test/wpt)** - Расширенный анализ прерываний для Windows. Измерьте время выполнения ISR/DPC с помощью **[xperf](/files/xperf-test-script.bat)**.
+- **[Windows Performance Toolkit](https://learn.microsoft.com/en-us/windows-hardware/test/wpt)** - Расширенный анализ прерываний для Windows. Измерьте время выполнения ISR/DPC с помощью **[xperf](/files/xperf-test-script.bat)**. Для более детального анализа используется **[Media eXperience Analyzer](https://learn.microsoft.com/en-us/windows-hardware/test/weg/delivering-a-great-media-experience)**.
 
 - **[Mouse Tester](https://github.com/valleyofdoom/MouseTester)** - Проверьте интервал опроса, частоту работы мыши, узнайте о стабильности чувствительности.
 
@@ -31,22 +22,21 @@
 - **[RTSS](https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/)** - В новой версии добавили полезной метрики (ищите на guru3d или других проверенных источниках бета [версию](https://www.youtube.com/watch?v=7DtEJlx-UQI)).
 
 
+## [Обсуждение версий и сборок Windows](/guide/About_Versions.md)
 
+## [Руководство по настройке Windows](/guide/Windows_Optimization.md)
 
-## 1. [О компьютерных аксессуарах, сборке, уходе, рекомендации](/guide/PC_Setup_and_devices.md)
+## [Исследования](/guide/Explorations.md)
 
-## 2. [Обсуждение версий и сборок Windows](/guide/About_Versions.md)
+## [Руководство по работе с Xperf](/guide/xperf_guide.md)
 
-## 3. [Руководство по настройке Windows](/guide/Windows_Optimization.md)
-
-## 4. [Исследования](/guide/Explorations.md)
-
-## 5. [Руководство по работе с Xperf](/guide/xperf_guide.md)
-
-## 6. [Рекомендуемые программы и утилиты](/guide/Recommended_Programs_and_Utilities.md)
+## [Рекомендуемые программы и утилиты](/guide/Recommended_Programs_and_Utilities.md)
 
 ## Послесловие
 
-Я не запрещаю использовать информацию из данного руководства, но если вы все же это делаете (не важно в каком виде, цитируете, используете в своем гайде и т.д.), то пожалуйста, оставляйте ссылки на этот гайд для продвижения (на гайд полностью, а не на автора, чтобы не нарушать лицензию).
+Благодарность вот этим классным ребятам: **[div5064](https://discord.gg/4b2SKrYZee)**, **[EXO](https://discord.gg/4b2SKrYZee)**, **[BEYOND_PERFORMANCE](https://discord.gg/xk3HKVPyef)**, **[Amitxv(valleyofdoom)](https://github.com/valleyofdoom/PC-Tuning)**, **[Timecard](https://github.com/djdallmann/GamingPCSetup)**, **[Boring Boredom](https://github.com/BoringBoredom/PC-Optimization-Hub)** и другие (список будет дополняться).
+
+
+Я не запрещаю использовать информацию из данного руководства, но если вы все же это делаете (не важно в каком виде, цитируете, используете в своем гайде и т.д.), то пожалуйста, оставляйте ссылки на этот гайд для продвижения (на гайд, а не на автора).
 
 Для обращения или сотрудничества пишите в личные сообщения Discord.

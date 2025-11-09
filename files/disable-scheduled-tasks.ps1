@@ -30,7 +30,6 @@ function main() {
         "bitlocker",
         "chkdsk",
         "data integrity scan",
-        "defrag",
         "languagecomponentsinstaller",
         "upnp",
         "windows filtering platform",
