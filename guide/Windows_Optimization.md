@@ -179,7 +179,7 @@ C:\files\registry-options.json
 > [!IMPORTANT]
 > Обычно, программы или игры сами докачивают необходимые библиотеки, поэтому можно не заморачиваться с ручной установкой, но это увеличит время установки программ/игр.
 
-- [Visual C++ Redistributable](https://github.com/abbodi1406/vcredist)
+- [Visual C++ Redistributable](https://gitlab.com/stdout12/vcredist)
 
 - [.NET 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) (уже установлено на Windows 10 1909+)
 
