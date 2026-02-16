@@ -41,12 +41,12 @@
 - [**MSI Afterburner**](https://www.msi.com/Landing/afterburner/graphics-cards)
 
 ## Программы
-[ToS Discord](https://discord.com/terms)
-[ToS Telegram](https://telegram.org/tos)
+Vencord нарушает [ToS Discord](https://discord.com/terms)!
+AyuGram нарушает [ToS Telegram](https://telegram.org/tos)!
 
 - [**Discord**](https://discord.com/)
 
-  - [Vencord (ВАЖНО: нарушает ToS Discord!](https://vencord.dev/)
+  - [Vencord](https://vencord.dev/)
   
 - [**Spotify**](https://download.scdn.co/SpotifySetup.exe)
 
@@ -56,7 +56,7 @@
   
 - [**Telegram**](https://github.com/telegramdesktop/tdesktop/releases)
 
-  - [AyuGram (ВАЖНО: нарушает ToS Telegram!)](https://github.com/AyuGram/AyuGramDesktop/releases)
+  - [AyuGram](https://github.com/AyuGram/AyuGramDesktop/releases)
   
 - [**qBittorrent**](https://qbittorrent.github.io/qBittorrent-website/download)
 
