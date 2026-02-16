@@ -42,6 +42,7 @@
 
 ## Программы
 Vencord нарушает [ToS Discord](https://discord.com/terms)!
+
 AyuGram нарушает [ToS Telegram](https://telegram.org/tos)!
 
 - [**Discord**](https://discord.com/)
