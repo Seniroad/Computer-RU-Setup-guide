@@ -53,7 +53,7 @@
   
 - [**Telegram**](https://github.com/telegramdesktop/tdesktop/releases)
 
-  - [AyuGram (ВАЖНО: нарушает [ToS Telegram](https://telegram.org/tos)!)](https://github.com/AyuGram/AyuGramDesktop/releases)
+  - [AyuGram (ВАЖНО: нарушает [ToS Telegram](https://telegram.org/tos)! )](https://github.com/AyuGram/AyuGramDesktop/releases)
   
 - [**qBittorrent**](https://qbittorrent.github.io/qBittorrent-website/download)
 
