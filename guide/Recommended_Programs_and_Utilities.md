@@ -42,8 +42,9 @@
 - [**MSI Afterburner**](https://www.msi.com/Landing/afterburner/graphics-cards)
 
 ## Программы
- [!WARNING]
+> [!WARNING]
 > **Vencord нарушает [ToS Discord](https://discord.com/terms)**
+
 > [!WARNING]
 > **AyuGram нарушает [ToS Telegram](https://telegram.org/tos)**
 
