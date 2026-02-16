@@ -27,7 +27,7 @@
 
 - [**Visual C++**](https://github.com/abbodi1406/vcredist/releases)
 
-- [**DirectX**]([https://github.com/abbodi1406/vcredist/releases](https://www.microsoft.com/en-gb/download/details.aspx?id=35))
+- [**DirectX**](https://www.microsoft.com/en-gb/download/details.aspx?id=35)
 
 - [**.NET Framework**](https://dotnet.microsoft.com/en-us/download)
 
