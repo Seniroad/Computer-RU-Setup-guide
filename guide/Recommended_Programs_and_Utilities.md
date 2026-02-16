@@ -1,116 +1,63 @@
-# 💡 Рекомендуемые программы и утилиты
+# Рекомендуемые программы / утилиты / образы Windows:
+- [**Hype Mode** (платно)](https://t.me/arsenzaa/1727) - важнейшая программа для улучшения производительности Windows 11, в создании которой я принимаю участие
 
-# 🖥️ Установка Windows
+## Windows
+- [**uupdump**](https://uupdump.net/)
+  - [Гайд по использованию](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/uupdump_guide.mp4)
+- [**os.click**](https://os.click/en)
+- [**HypeOS**](https://t.me/arsenzaa)
+  - [Гайд по установке](https://t.me/arsenzaa/1669)
 
-![win](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/win.png)
-
-- [**Uupdump**](https://uupdump.net/)
-
-  - ![*Гайд по установке*](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/uupdump_guide.mp4)
-
-# ⚙️ Постпереустановочные инструменты
-
-![Gear](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/gear120.png)
-
-- [**Official Nvidia Drivers**](https://www.nvidia.com/en-us/drivers/)
-
-  - [*NVCleanstall*](https://nvcleanstall.net/)
+## Драйвера / библиотеки
+- [**NVIDIA Drivers**](https://www.nvidia.com/download/Find.aspx)
+- [**NVCleanstall** (recommended)](https://www.techpowerup.com/download/techpowerup-nvcleanstall/)
 
 - [**AMD Drivers and Support for Processors and Graphics**](https://www.amd.com/en/support/download/drivers.html)
+- [**Radeon Software Slimmer**](https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases)
+- [**MoreClockTool (MCT)**](https://www.igorslab.de/en/the-moreclocktool-mct-for-free-download-the-practical-oc-attachment-to-the-morepowertool-replaces-the-wattman/)
 
-  - [*Radeon Software Slimmer*](https://github.com/GSDragoon/RadeonSoftwareSlimmer)
-  - [*Universal x86 Tuning Utility*](https://amdaputuningutility.com/)
+- [**Snappy Driver Installer Origin (SDIO)**](https://www.snappy-driver-installer.org/)
+- [**Visual C++**](https://github.com/abbodi1406/vcredist/releases)
+- [**DirectX**]([https://github.com/abbodi1406/vcredist/releases](https://www.microsoft.com/en-gb/download/details.aspx?id=35))
+- [**.NET Framework**](https://dotnet.microsoft.com/en-us/download)
+- [**Adoptium** (JDK alternative)](https://adoptium.net/)
 
-- [**Snappy Driver Installer**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%BE%D0%B2)
+## Утилиты
+- [**DEVICE-TWEAKER** (by arsenza)](https://github.com/arsenzaaa/DEVICE-TWEAKER)
+- [**OLED-SAVER** (by arsenza)](https://github.com/arsenzaaa/OLEDSAVER)
 - [**MSI Afterburner**](https://www.msi.com/Landing/afterburner/graphics-cards)
 
-  - [*Настройте Msi Afterburner*](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%82%D0%B5-msi-afterburner)
-
-- [**Установка библиотек (Visual C++, DirectX)**](https://www.mediafire.com/file/pxgrwf92jqzoax9/DirectX_%2526_Visual_C%252B%252B.7z/file)
-- [**Java**](https://www.java.com/download/ie_manual.jsp)
-
-  - [*Adoptium*](https://adoptium.net/)
-
-####
-- [**7-Zip**](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-7-zip)
-- [**Office Tool**](https://github.com/YerongAI/Office-Tool)
-- [**VLC**](https://www.videolan.org/)
-
-# 📞 Discord
-
-![Discord logo](/docs/discord_update.png)
-
-> [!WARNING]
-> **Если вы используете клиенты, то они частично нарушают ***ToS*** Дискорда, поэтому используйте на свой страх и риск.**
-
+## Программы
 - [**Discord**](https://discord.com/)
+  - [Vencord (ВАЖНО: нарушает [ToS Discord](https://discord.com/terms)!](https://vencord.dev/)
+- [**Spotify**](https://download.scdn.co/SpotifySetup.exe)
+  - [SpotX](https://github.com/SpotX-Official/SpotX)
+  - [Spicetify](https://spicetify.app/)
+- [**Telegram**](https://github.com/telegramdesktop/tdesktop/releases)
+  - [AyuGram (ВАЖНО: нарушает [ToS Telegram](https://telegram.org/tos)!)](https://github.com/AyuGram/AyuGramDesktop/releases)
+- [**qBittorrent**](https://qbittorrent.github.io/qBittorrent-website/download)
+- [**VLC**](https://www.videolan.org/)
+- [**foobar2000**](https://www.foobar2000.org/)
+- [**RuDesktop**](https://rudesktop.ru/)
+- [**RustDesk**](https://github.com/rustdesk/rustdesk/releases/)
+- [**AnyDesk**](https://anydesk.com/)
+- [**ShareX**](https://github.com/ShareX/ShareX/releases/)
 
-- [**Vencord**](https://vencord.dev/) 
+## Браузеры
+[**Тесты приватности браузеров**](https://privacytests.org/) 
+- [**Thorium**](https://thorium.rocks/)
+- [**Mercury**](https://thorium.rocks/mercury)
+- [**ungoogled-chromium**](https://github.com/ungoogled-software/ungoogled-chromium/blob/master/docs/platforms.md)
+- [**Firefox**](https://www.mozilla.org/ru/firefox/new/)
+  - [arkenfox (user.js)](https://github.com/arkenfox/user.js)
+- [**Google Chrome**](https://www.google.com/intl/ru/chrome/?standalone=1)
 
-# 🎵 Spotify
-
-![Spotify logo](/docs/spotify.png)
-
-- [**Spotify**](https://www.spotify.com/de-en/download/other/)
-
-- [**SpotX**](https://github.com/SpotX-Official/SpotX) 
-
-- [**Spicetify**](https://spicetify.app/)
-
-# 📘 Telegram
-
-![Telegramlogo](/docs/telegram120.png)
-
-- [**Telegram**](https://desktop.telegram.org/)
-
-- [**AyuGram**](https://github.com/AyuGram/AyuGramDesktop)
-
-# 🌎 Браузеры
-
-![Browser logo](/docs/browser.png)
-
-> [!Important]
-> [**Тесты приватности браузеров**](https://privacytests.org/) 
-
-- [**Thorium**](https://www.majorgeeks.com/files/details/thorium_browser.html)
-
-- [**Ungoogled**](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases)
-
-- [**Mozilla FireFox**](https://www.mozilla.org/en-US/firefox/new/)
-
-  - [*Install FireFox by valleyofdoom*](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/files/install-firefox_by_amit.ps1)
-
-  - [*Firefox privacy, security and anti-tracking*](https://github.com/arkenfox/user.js)
-
-- [Mercury](https://github.com/Alex313031/Mercury/releases/tag/v.129.0.2) 🔹 ***Форк FireFox***
-
-# 🕹️ Лаунчеры
-
-![Game logo](/docs/gaming_logo.png)
-
+## Игровые лаунчеры
 - [**Steam**](https://store.steampowered.com/about/)
-
-  - [*NoSteamWebHelper*](https://github.com/Aetopia/NoSteamWebHelper) 
-
-- [**EpicGames**](https://store.epicgames.com/en-US/)
-
-- [**Battle.Net**](https://us.shop.battle.net/ru-ru)
-
-# 💡 Прочее
-
-![Other](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/docs/other.png)
-- [**HypeOS - Custom Gaming Windows**](https://discord.gg/94B8GDCs)
-
-- [**AppxPackagesManager**](https://github.com/valleyofdoom/AppxPackagesManager)
-
-
-  - [*Microsoft Interrupt Affinity Tool*](https://www.techpowerup.com/download/microsoft-interrupt-affinity-tool/)
-  
-  - [*Msi Utility v3*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
-
-
-  - [*Больше о MMCSS*](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-mmcss)
-
- 
-
-  - [*Больше о Win32Separation*](https://github.com/Seniroad/Computer-RU-Setup-guide/blob/main/guide/Windows_Optimization.md#%D0%BA%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%B2)
+  - [NoSteamWebHelper](https://github.com/Aetopia/NoSteamWebHelper)
+- [**Epic Games**](https://store.epicgames.com/en-US/)
+  - [Heroic](https://heroicgameslauncher.com/)
+- [**Battle.Net**]([https://us.shop.battle.net/ru-ru](https://eu.shop.battle.net/en-us))
+- **Minecraft**
+  - [Modrinth](https://modrinth.com/app)
+  - [Prism Launcher](https://github.com/PrismLauncher/PrismLauncher)
