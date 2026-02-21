@@ -22,7 +22,7 @@
 
   - [**Radeon Software Slimmer**](https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases)
   
-- [MoreClockTool (MCT)](https://www.igorslab.de/en/the-moreclocktool-mct-for-free-download-the-practical-oc-attachment-to-the-morepowertool-replaces-the-wattman/)
+- [**MoreClockTool (MCT)**](https://www.igorslab.de/en/the-moreclocktool-mct-for-free-download-the-practical-oc-attachment-to-the-morepowertool-replaces-the-wattman/)
 
 - [**Snappy Driver Installer Origin (SDIO)**](https://www.snappy-driver-installer.org/)
 
