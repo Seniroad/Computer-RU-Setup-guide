@@ -862,8 +862,8 @@ Windows по умолчанию планирует прерывания и DPC �
 - Для ``NDIS`` поставьте ``RssBaseProcNumber`` на необходимое ядро.
   - Аффинити не работают для NDIS.
 
-    > [!WARNING]
-    > Некоторые сетевые адаптеры не поддерживают подобную настройку, и DPC остаётся на ядре 0, даже если параметр ``RssBaseProcNumber`` установлен на другое ядро и прерывания выполняются на нём. Рекомендуется оставить настройки этого адаптера по умолчанию или воспользоваться решением от [таймкарда](https://github.com/djdallmann/GamingPCSetup/blob/master/CONTENT/RESEARCH/NETWORK/README.md#q-my-onboard-network-adapter-i225-v-supports-rss-msi-and-msi-x-but-why-is-my-indirection-table-missing-that-gives-proper-support-for-rss-in-microsoft-windows).
+> [!WARNING]
+> Некоторые сетевые адаптеры не поддерживают подобную настройку, и DPC остаётся на ядре 0, даже если параметр ``RssBaseProcNumber`` установлен на другое ядро и прерывания выполняются на нём. Рекомендуется оставить настройки этого адаптера по умолчанию или воспользоваться решением от [таймкарда](https://github.com/djdallmann/GamingPCSetup/blob/master/CONTENT/RESEARCH/NETWORK/README.md#q-my-onboard-network-adapter-i225-v-supports-rss-msi-and-msi-x-but-why-is-my-indirection-table-missing-that-gives-proper-support-for-rss-in-microsoft-windows).
 
 - Для ``NetAdapterCx`` поставьте аффинити на необходимое ядро.
 
