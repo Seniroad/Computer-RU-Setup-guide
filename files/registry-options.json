@@ -2,6 +2,7 @@
   "options": {
     "disable windows update": false,
     "disable automatic windows updates": false,
+    "disable feature updates": false,
     "disable driver installation via windows update": false,
     "disable automatic store app updates": false,
     "disable windows defender": false,
@@ -21,23 +22,17 @@
     "disable advertising id": false,
     "disable autoplay": false,
     "disable cloud content": false,
-    "disable account-based explorer features": false,
-    "disable mdm enrollment": false,
-    "disable microsoft store push to install feature": false,
-    "mitigate web-based search info": false,
+    "disable suggestions and web results in the search box and in search home": false,
     "disable sending inking and typing data to microsoft": false,
     "disable automatic maintenance": false,
-    "disable program compatibility assistant": false,
-    "disable remote assistance": false,
+    "disable computer is out of support message": false,
+    "disable fault tolerant heap": false,
     "disable sign-in and lock last interactive user after a restart": false,
     "show file extensions": false,
     "disable widgets": false,
+    "disable remote assistance": false,
     "disable telemetry": false,
     "disable retrieval of online tips and help in the immersive control panel": false,
-    "disable typing insights": false,
-    "disable suggestions in the search box and in search home": false,
-    "disable computer is out of support message": false,
-    "disable fault tolerant heap": false,
-    "setup mmcss and quantum on optimal value": false
+    "disable typing insights": false
   }
 }
