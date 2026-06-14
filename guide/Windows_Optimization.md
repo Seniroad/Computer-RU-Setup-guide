@@ -268,15 +268,15 @@ for %a in ("SysWOW64" "System32") do (if exist "%windir%\%~a\OneDriveSetup.exe" 
 
   - Обновление браузера отменит некоторые изменения, сделанные на предыдущем этапе. Чтобы браузер не обновлялся при случайном открытии, можно выполнить следующую команду. Убедитесь, что в диспетчере задач не запущено ни одного скрытого процесса Microsoft Edge.
 
-        ```bat
-        rd /s /q "C:\Program Files (x86)\Microsoft\EdgeUpdate"
-        ```
+    ```bat
+    rd /s /q "C:\Program Files (x86)\Microsoft\EdgeUpdate"
+    ```
 
   - Откройте cmd и введите следующую команду, чтобы удалить все связанные с ним ярлыки.
 
-        ```bat
-        for /f "delims=" %a in ('where /r C:\ *edge.lnk*') do (del /f /q "%a")
-        ```
+    ```bat
+    for /f "delims=" %a in ('where /r C:\ *edge.lnk*') do (del /f /q "%a")
+    ```
 
 - Удалите все ненужные программы, набрав ``appwiz.cpl`` в ``Win+R``.
 
@@ -445,59 +445,63 @@ powercfg /h off
 
   - По умолчанию парковка процессора отключена в схеме питания High Performance ([1](https://learn.microsoft.com/en-us/windows-server/administration/performance-tuning/hardware/power/power-performance-tuning#using-power-plans-in-windows-server)). Однако в Windows 11+ с современными процессорами парковка отменяется и включается. Пользователи могут определить, припаркован ли процессор, набрав ``resmon`` в ``Win+R``. Помимо того, что парковка задумывалась как функция энергосбережения, в таких видео, как [это](https://www.youtube.com/watch?v=2yOYfT_r0xI) и [это](https://www.youtube.com/watch?v=gyg7Gm7aN2A), объясняется, что это желаемое поведение для правильного планирования потоков, что, вероятно, хорошо для обычного пользователя, но они не учитывают штраф за задержку при распарковке ядер (как при переходе в C-State) вместе с активностью в режиме ядра (прерывания, DPC). Что касается планирования для каждого процессора, вы можете легко достичь того же результата, управляя нагрузкой на каждый процессор вручную (например, прикрепить приложение реального времени к [одному CCX/CCD](https://hwbusters.com/cpu/amd-ryzen-9-7950x3d-cpu-review-performance-thermals-power-analysis/2) или P-Core), настроив сродство, при этом преимуществом является отсутствие накладных расходов от драйверов чипсета и процессов Xbox, постоянно работающих в фоновом режиме и заставляющих выполнять ненужные переключения контекста. Дополнительную информацию см. в разделе [Планирование в режиме ядра (прерывания, DPC и многое другое)](#планирование-в-пользовательском-режиме-процессы-потоки)
 
-        ```bat
-        powercfg /setacvalueindex scheme_current 54533251-82be-4824-96c1-47b60b740d00 0cc5b647-c1df-4637-891a-dec35c318583 100
-        ```
+    ```bat
+    powercfg /setacvalueindex scheme_current 54533251-82be-4824-96c1-47b60b740d00 0cc5b647-c1df-4637-891a-dec35c318583 100
+    ```
 
-        ```bat
-        powercfg /setacvalueindex scheme_current 54533251-82be-4824-96c1-47b60b740d00 0cc5b647-c1df-4637-891a-dec35c318584 100
-        ```
+    ```bat
+    powercfg /setacvalueindex scheme_current 54533251-82be-4824-96c1-47b60b740d00 0cc5b647-c1df-4637-891a-dec35c318584 100
+    ```
 
 - Processor performance time check interval - 5000 (Частота обновления политик питания)
 
   - Существует несколько DPC управления питанием ntoskrnl, которые запланированы на периодический интервал для переоценки P-States и припаркованных ядер. При статической частоте процессора и отключенной парковке ядер эти проверки становятся неактуальными, поэтому ненужные DPC становятся запланированными. Параметр ``Интервал проверки времени производительности процессора`` контролирует частоту этих проверок, поэтому увеличение значения параметра может снизить нагрузку на процессор, так как будет запланировано значительно меньше DPC. Для справки и на момент проверки схемы энергосбережения, сбалансированного и высокопроизводительного питания имеют значения по умолчанию 200, 15 и 15 соответственно. 5000 - это максимально допустимое значение. Конечно, если используется динамическая частота процессора (например, Precision Boost Overdrive, Turbo Boost) и включена парковка, следует оценить эффект от увеличения этого значения, поскольку ядра могут не успеть поднять свою частоту в ответ на рабочую нагрузку, так как ОС будет реже оценивать текущий сценарий.
 
-<table style="text-align: center;">
+<table>
+  <thead>
     <tr>
-        <td rowspan="2">Функция DPC</td>
-        <td colspan="3">Средние DPC Rate</td>
-        <td colspan="3">Всего DPCs</td>
+      <th align="center" rowspan="2">Функция DPC</th>
+      <th align="center" colspan="3">Средние DPC Rate</th>
+      <th align="center" colspan="3">Всего DPCs</th>
     </tr>
     <tr>
-        <td>15</td>
-        <td>200</td>
-        <td>5000</td>
-        <td>15</td>
-        <td>200</td>
-        <td>5000</td>
+      <th align="center">15</th>
+      <th align="center">200</th>
+      <th align="center">5000</th>
+      <th align="center">15</th>
+      <th align="center">200</th>
+      <th align="center">5000</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><code>ntoskrnl!PpmPerfAction</code></td>
+      <td align="center">15.45Hz</td>
+      <td align="center">3.07Hz</td>
+      <td align="center">N/A</td>
+      <td align="center">311</td>
+      <td align="center">60</td>
+      <td align="center">1</td>
     </tr>
     <tr>
-        <td>ntoskrnl!PpmPerfAction</td>
-        <td>15.45Hz</td>
-        <td>3.07Hz</td>
-        <td>N/A</td>
-        <td>311</td>
-        <td>60</td>
-        <td>1</td>
+      <td align="center"><code>ntoskrnl!PpmCheckRun</code></td>
+      <td align="center">12.99Hz</td>
+      <td align="center">2.29Hz</td>
+      <td align="center">N/A</td>
+      <td align="center">262</td>
+      <td align="center">46</td>
+      <td align="center">1</td>
     </tr>
     <tr>
-        <td>ntoskrnl!PpmCheckRun</td>
-        <td>12.99Hz</td>
-        <td>2.29Hz</td>
-        <td>N/A</td>
-        <td>262</td>
-        <td>46</td>
-        <td>1</td>
+      <td align="center"><code>ntoskrnl!PpmCheckPeriodicStart</code></td>
+      <td align="center">60.39Hz</td>
+      <td align="center">4.99Hz</td>
+      <td align="center">0.2Hz</td>
+      <td align="center">1213</td>
+      <td align="center">100</td>
+      <td align="center">4</td>
     </tr>
-    <tr>
-        <td>ntoskrnl!PpmCheckPeriodicStart</td>
-        <td>60.39Hz</td>
-        <td>4.99Hz</td>
-        <td>0.2Hz</td>
-        <td>1213</td>
-        <td>100</td>
-        <td>4</td>
-    </tr>
+  </tbody>
 </table>
 
 ```bat
@@ -583,17 +587,17 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD
 
     - Примерный список всех подобных параметров:
 
-        ```
-            Disabled Advanced EEE
-            Energy Efficient Ethernet (EEE)
-            Gigabit Ethernet
-            Gigabit Lite
-            Power Saving Mode
-            Reduce Speed on Power Down
-            Selective Suspend
-            Ultra Low Power Mode
-            System Idle Power Saver
-        ```
+    ```
+        Disabled Advanced EEE
+        Energy Efficient Ethernet (EEE)
+        Gigabit Ethernet
+        Gigabit Lite
+        Power Saving Mode
+        Reduce Speed on Power Down
+        Selective Suspend
+        Ultra Low Power Mode
+        System Idle Power Saver
+    ```
 
   - Включите (**НЕ Отключайте**) Параметры связанные с Offload, так как они уменьшают нагрузку на ЦП.
 
@@ -774,38 +778,38 @@ Windows 11 и выше ограничивает частоту сообщени�
 - Есть заблуждение, что MPO вызывает статтеры, проблемы с отображением и мерцания. Да, эти проблемы присутствовали на старых драйверах/верисиях Windows, но при тестировании на Windows 24H2 такого не было замечено.
   - Также, все еще существует заблуждение, что при помощи ключа реестра ``OverlayTestMode`` можно отключить MPO. Нет, эта возможность была давно закрыта. Как показали мои исследования, ``OverlayTestMode`` не меняет значение ``MPO Max Planes``, которые можно узнать в ``dxdiag``.
 
-<table style="text-align: center;">
-    <tr>
-        <td colspan="2"><b>OverlayTestMode Значения</b></td>
-    </tr>
-    <tr>
-        <td>Значение</td>
-        <td>Примерное описание</td>
-    </tr>
-    <tr>
-        <td><code>null</code> (отсутствие ключа)</td>
-        <td><code>=0</code></td>
-    </tr>
-    <tr>
-        <td><code>0</code></td>
-        <td>Разрешает <codeMPOcode>, и не разрешает <code>CDrawingContext::GetSwapChainOverlayColor</code></td>
-    </tr>
-    <tr>
-        <td><code>1-3</code></td>
-        <td>Разрешает <code>MPO</code> и <code>CDrawingContext::GetSwapChainOverlayColor</code></td>
-    </tr>
-    <tr>
-        <td><code>4</code></td>
-        <td>принудительное выполнение для поддержки <code>MPO</code> (<code>COverlayContext::CheckMultiPlaneOverlaySupport</code> обходит запрос на поддержку), но это не означает, что поверхности получают плоскость оверлея.</td>
-    </tr>
-    <tr>
-        <td><code>5</code></td>
-        <td>Отключить <code>MPO</code> (<code>COverlayContext::OverlaysEnabled</code> возвращает <code>false</code>, а <code>COverlayContext::IsCompatibleOutputScaling</code> возвращает <code>0</code> для одного значения “CompatibleOutputScaling”)</td>
-    </tr>
-    <tr>
-        <td><code>>=6</code></td>
-        <td>Возвращает <code>Invalid</code></td>
-    </tr>
+<table align="center">
+  <tr>
+    <th align="center" colspan="2">OverlayTestMode</th>
+  </tr>
+  <tr>
+    <th align="center">Значение</th>
+    <th align="center">Примерное описание</th>
+  </tr>
+  <tr>
+    <td align="center"><code>null</code> (отсутствие ключа)</td>
+    <td align="center"><code>=0</code></td>
+  </tr>
+  <tr>
+    <td align="center"><code>0</code></td>
+    <td align="center">Разрешает <code>MPO</code>, и не разрешает <code>CDrawingContext::GetSwapChainOverlayColor</code></td>
+  </tr>
+  <tr>
+    <td align="center"><code>1-3</code></td>
+    <td align="center">Разрешает <code>MPO</code> и <code>CDrawingContext::GetSwapChainOverlayColor</code></td>
+  </tr>
+  <tr>
+    <td align="center"><code>4</code></td>
+    <td align="center">Принудительное выполнение для поддержки <code>MPO</code> (<code>COverlayContext::CheckMultiPlaneOverlaySupport</code> обходит запрос на поддержку), но это не означает, что поверхности получают плоскость оверлея.</td>
+  </tr>
+  <tr>
+    <td align="center"><code>5</code></td>
+    <td align="center">Отключить <code>MPO</code> (<code>COverlayContext::OverlaysEnabled</code> возвращает <code>false</code>, а <code>COverlayContext::IsCompatibleOutputScaling</code> возвращает <code>0</code> для одного значения <code>CompatibleOutputScaling</code>)</td>
+  </tr>
+  <tr>
+    <td align="center"><code>&gt;=6</code></td>
+    <td align="center">Возвращает <code>Invalid</code></td>
+  </tr>
 </table>
 
 - Проблемы с MPO пока что наблюдаются только в приложениях на базе *Сhromium*, что можно исправить данным ключем реестра ([1](https://www.kernel.org/doc/html/next/gpu/amdgpu/display/mpo-overview.html), [2](https://learn.microsoft.com/en-us/windows-hardware/drivers/display/multiplane-overlay-support), [3](https://answers.microsoft.com/en-us/windows/forum/all/lags-with-mpo-multi-plane-overlay/3c0e7566-842d-4bdf-9e8e-af2930b47201)):
