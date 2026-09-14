@@ -1,5 +1,9 @@
 # Руководство по настройке Windows
 
+>[!NOTE]
+> Почему гайд не обновляется: [`ccd2fbc`](https://github.com/Seniroad/Computer-RU-Setup-guide/commit/ccd2fbc91ff9bdd34a9a856faf5cf591d18cec99)
+
+
 ## Обход OOBE
 
 - Windows Server может потребовать ввести пароль, который при желании можно убрать потом.
